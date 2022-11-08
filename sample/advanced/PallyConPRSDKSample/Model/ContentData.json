@@ -1,0 +1,72 @@
+﻿{
+  "Reactive": [
+    {
+      "Title": "Cotent Title",
+      "Description": "Content Description",
+      "DrmType": "PlayReady",
+      "Url": "Content URL",
+      "Token": "token",
+      "CustomData": "custom data",
+      "ContentID": "content id",
+      "UserID": "user id",
+      "OptionalID": "",
+      "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
+    }
+  ],
+  "Proactive": [
+    {
+      "Title": "Cotent Title",
+      "Description": "Content Description",
+      "DrmType": "PlayReady",
+      "Url": "Content URL",
+      "Token": "token",
+      "CustomData": "custom data",
+      "ContentID": "content id",
+      "UserID": "user id",
+      "OptionalID": "",
+      "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
+    }
+  ],
+  "HWDRM": [
+    {
+      "Title": "Cotent Title",
+      "Description": "Content Description",
+      "DrmType": "PlayReady",
+      "Url": "Content URL",
+      "Token": "token",
+      "CustomData": "custom data",
+      "ContentID": "content id",
+      "UserID": "user id",
+      "OptionalID": "",
+      "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
+    }
+  ],
+  "Download": [
+    {
+      "Title": "Cotent Title",
+      "Description": "Content Description",
+      "DrmType": "PlayReady",
+      "Url": "Content URL",
+      "Token": "token",
+      "CustomData": "custom data",
+      "ContentID": "content id",
+      "UserID": "user id",
+      "OptionalID": "",
+      "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
+    }
+  ],
+  "Clear": [
+    {
+      "Title": "Cotent Title",
+      "Description": "Content Description",
+      "DrmType": "PlayReady",
+      "Url": "Content URL",
+      "Token": "token",
+      "CustomData": "custom data",
+      "ContentID": "content id",
+      "UserID": "user id",
+      "OptionalID": "",
+      "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
+    }
+  ]
+}

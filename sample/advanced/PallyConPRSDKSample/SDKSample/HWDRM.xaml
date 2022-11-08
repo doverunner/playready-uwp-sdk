@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="PallyConPRSDKSample.SDKSample.HWDRM"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PallyConPRSDKSample.SDKSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:localPane="using:PallyConPRSDKSample"
+    xmlns:data="using:PallyConPRSDKSample.Model"
+    xmlns:userControl="using:PallyConPRSDKSample.Controls"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <CollectionViewSource x:Name="ContentsCVS" IsSourceGrouped="True" />
+
+        <DataTemplate x:Key="ContentListViewTemplate" x:DataType="data:ContentInfo">
+            <StackPanel Orientation="Horizontal" Width="Auto" Height="140">
+                <Image Height="110" Width="110" Margin="0,8,0,8" Source="{x:Bind ImagePath}" Stretch="UniformToFill"/>
+                <StackPanel VerticalAlignment="Center" Width="380" Margin="8,8,0,0">
+                    <TextBlock Text="{x:Bind Title}" Style="{StaticResource BaseTextBlockStyle}" />
+                    <TextBlock Text="{x:Bind Url}" TextWrapping="WrapWholeWords" />
+                    <RelativePanel>
+                        <Button x:Name="HardwareDrm" Width="110" Content="HARDWARE" Click="HardwareDrm_Click" HorizontalAlignment="Left" HorizontalContentAlignment="Center" />
+                        <Button x:Name="SoftwareDrm" Width="110" Content="SOFTWARE" Click="SoftwareDrm_Click" HorizontalAlignment="Left" HorizontalContentAlignment="Center" RelativePanel.Below="HardwareDrm" Margin="0,5,0,0"/>
+                    </RelativePanel>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Style="{StaticResource SplitViewTogglePaneButtonStyle}"
+                    VerticalAlignment="Center"
+                    Click="ShowSliptView"/>
+        <TextBlock Text="HWDRM Contents" 
+                       VerticalAlignment="Center"
+                       Style="{ThemeResource TitleTextBlockStyle}" 
+                       Grid.Column="1"/>
+
+        <ListView x:Name="HWDRMListView"
+                  ItemsSource="{x:Bind Groups}"
+                  ItemTemplate="{StaticResource ContentListViewTemplate}"
+                  IsItemClickEnabled="True"
+                  SelectionMode="Single"
+                  ShowsScrollingPlaceholders="True"
+                  Grid.Row="1"
+                  Grid.ColumnSpan="2"
+                  ItemClick="ListView_ItemClick">
+
+            <ListView.GroupStyle>
+                <GroupStyle >
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate x:DataType="data:ContentInfo">
+                            <TextBlock Text="Contents" 
+                                       Style="{ThemeResource TitleTextBlockStyle}"/>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListView.GroupStyle>
+        </ListView>
+        <localPane:PallyConPane x:Name="PallyConPane" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+        <Border Background="#000000" Grid.Row="2" Grid.Column="2">
+            <MediaElement Name="mediaElement" AreTransportControlsEnabled="True"/>
+        </Border>
+        <userControl:PallyConPlayReadyInfo HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" Width="350" Height="375"/>
+    </Grid>
+</Page>
