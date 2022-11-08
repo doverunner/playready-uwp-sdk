@@ -1,4 +1,4 @@
-# PallyCon Widevine Android SDK
+# PallyCon PlayReady UWP SDK
 
 [PallyCon](https://pallycon.com) PlayReady UWP SDK makes it easy to apply Microsoft’s PlayReady DRM when developing media service apps for Universal Windows Platform(UWP).
 Please refer to the links below for detailed information.
