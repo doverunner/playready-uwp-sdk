@@ -19,7 +19,6 @@ using System.Diagnostics;
 using Windows.Storage;
 using System.Threading.Tasks;
 using Windows.UI.Popups;
-// 빈 페이지 항목 템플릿에 대한 설명은 https://go.microsoft.com/fwlink/?LinkId=234238에 나와 있습니다.
 
 using PallyConSDK;
 using PallyConSDK.DownloadTask;
@@ -32,9 +31,6 @@ using Windows.Media.Playback;
 
 namespace PallyConPRSDKSample.SDKSample
 {
-    /// <summary>
-    /// 자체적으로 사용하거나 프레임 내에서 탐색할 수 있는 빈 페이지입니다.
-    /// </summary>
     public sealed partial class DownloadContents : Page
     {
         private IEnumerable<ContentInfo> _groups;
@@ -57,8 +53,6 @@ namespace PallyConPRSDKSample.SDKSample
 
             PPSDKWapper = new PallyConPRSDKWrapper();
 
-            //
-            // 컨텐츠 다운로드를 SDK가 아닌 외부에서 구현하고자 할때 콜백 함수를 지정해 준다.
             // When you want to implement content downloads outside of SDK, you specify a callback function.
             //
             //callbackRequest = new DownloadSendRequest(this.CallbackDownloadTask);
@@ -241,11 +235,6 @@ namespace PallyConPRSDKSample.SDKSample
             }
         }
 
-        /// <summary>
-        /// 파일 갯수를 비교하여 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             var button = (Button)sender;
@@ -395,11 +384,6 @@ namespace PallyConPRSDKSample.SDKSample
                     {
                         if (!response.IsSuccessStatusCode)
                         {
-                            //
-                            // MPD 정보를 통해 세그먼트된 파일 개수를 계산하는데 실제 개수와 다른 경우가 있다(1~2개 정도)
-                            // 존재하지 않는 파일을 요청하면 NotFound가 발생하지만 이를 적절히 통과 되도록 구현해야 한다.
-                            // Download Callback 함수를 구현하는 업체는 이를 고려하여 개발해야 한다.
-                            //
                             // The MPD information calculates the number of files that are segmented, sometimes different from the actual number (one or two).
                             // If you request a file that does not exist, a NotFound will occur, but you must implement it so that it passes properly.
                             // Companies that implement Download Callback functions should develop them in consideration of this.

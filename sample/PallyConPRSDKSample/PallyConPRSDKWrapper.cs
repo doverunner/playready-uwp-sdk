@@ -21,9 +21,9 @@ namespace PallyConPRSDKSample
         // PallyCon License Acqusition URL
         private string LA_URL = "https://license.pallycon.com/ri/licenseManager.do";
         // PallyCon Site ID
-        private const string SITE_ID = "PallyCon Site ID";
+        private string SITE_ID = " ";
         // PallyCon Site Key
-        private const string SITE_KEY = "PallyCon Site Key";
+        private string SITE_KEY = " ";
         // PallyCon PlayReady SDK
         public static PallyConPRSDK PPSDK = PallyConPRSDK.GetInstance;
         // PlayReady Information
@@ -39,7 +39,7 @@ namespace PallyConPRSDKSample
         /// </summary>
         /// <param name="siteid"> PallyCon Site ID</param>
         /// <param name="sitekey"> PallyCon Site Key</param>
-        public PallyConPRSDKWrapper(string siteid = SITE_ID, string sitekey = SITE_KEY )
+        public PallyConPRSDKWrapper(string siteid = "SITE_ID", string sitekey = "SITE_KEY")
         {
             try
             {
@@ -144,7 +144,7 @@ namespace PallyConPRSDKSample
         /// <summary>
         /// Enter the content information to download and the DownloadTask handler information initially.
         /// It also runs the proxy server needed to play downloaded content.
-        /// 다운로드된 컨텐츠는 아래 경로에 저장됩니다.
+        /// The downloaded content is stored in the path below.
         /// C:\Users\UserID\AppData\Local\Packages\UWP App ID\LocalState
         /// </summary>
         /// <param name="content">Content Information</param>

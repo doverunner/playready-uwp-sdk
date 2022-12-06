@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PallyConPRSDKSample", "PallyConPRSDKSample.csproj", "{C8ACAFD8-0368-4982-9290-329D86EF0DE0}"
 EndProject
@@ -38,6 +38,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3CA718FE-2023-4533-8F2B-998989CEDE80}
+		SolutionGuid = {8C623877-77DB-4B28-85BC-4CFDED1AE9AC}
 	EndGlobalSection
 EndGlobal
