@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.12.30.2" projectFile="I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\PallyConPRSDKAPI.shfbproj" started="2018-09-13 오전 11:11:18">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.12.30.2" projectFile="D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\PallyConPRSDKAPI.shfbproj" started="2021-06-07 오전 10:33:31">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
 Locating components in the following folder(s):
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI
     C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
     C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
 Using framework reflection data for &#39;.NET Framework 4.5&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
@@ -18,31 +18,33 @@ Clearing any prior web/markdown output...
 </buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
-Source: I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\PallyConPRSDK.csproj
-    Found project &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\PallyConPRSDK.csproj&#39;
+Source: D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\PallyConPRSDK.csproj
+    Found project &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\PallyConPRSDK.csproj&#39;
 
 Parsing project files
-    Found assembly &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\bin\x86\Release\PallyCon.PlayReady.UWP.SDK.dll&#39;
+    Found assembly &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\bin\x64\Release\PallyCon.PlayReady.UWP.SDK.dll&#39;
 SHFB: Warning BE0007: A project with a different or higher framework version was found.  Changing project FrameworkVersion property from &#39;.NET Framework 4.5&#39; to &#39;.NET for Universal Windows&#39; for the build.
 
 References to include (excluding framework assemblies):
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\bin\x86\Release\PallyCon.PlayReady.UWP.SDK.dll
-SHFB: Warning BE0062: No documentation source XML comments files found.  The help file will not contain any member comments.
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\bin\x64\Release\PallyCon.PlayReady.UWP.SDK.dll
+
+Copying XML comments files
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDK\bin\x64\Release\PallyCon.PlayReady.UWP.SDK.xml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\PallyCon.PlayReady.UWP.SDK.xml
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, 영어(미국))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.0240
+</plugIn>    Last step completed in 00:00:00.0040
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0010
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-빌드 시작: 2018-09-13 오전 11:11:20
-1 노드의 &quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateRefInfo.proj&quot; 프로젝트(기본 대상)입니다.
+빌드 시작: 2021-06-07 오전 10:33:32
+1 노드의 &quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateRefInfo.proj&quot; 프로젝트(기본 대상)입니다.
 PrepareForBuild:
   &quot;obj\Debug\&quot; 디렉터리를 만들고 있습니다.
 GenerateRefInfo:
@@ -59,14 +61,14 @@ GenerateRefInfo:
   Copyright ⓒ 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ⓒ 2006-2016, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
-&quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateRefInfo.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
-    Last step completed in 00:00:02.3591
+&quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateRefInfo.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
+    Last step completed in 00:00:02.3454
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-빌드 시작: 2018-09-13 오전 11:11:23
-1 노드의 &quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\TransformManifest.proj&quot; 프로젝트(기본 대상)입니다.
+빌드 시작: 2021-06-07 오전 10:33:35
+1 노드의 &quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\TransformManifest.proj&quot; 프로젝트(기본 대상)입니다.
 TransformManifest:
   XslTransform (v2017.12.30.2)
   Copyright ⓒ 2006-2017, Microsoft Corporation, All Rights Reserved.
@@ -96,12 +98,12 @@ TransformManifest:
   Copyright ⓒ 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ⓒ 2006-2016, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
-&quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\TransformManifest.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
-    Last step completed in 00:00:00.6310
+&quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\TransformManifest.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
+    Last step completed in 00:00:00.7821
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0160
+    Last step completed in 00:00:00.0040
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -109,60 +111,62 @@ Copying standard token shared content file...
 Checking for other token files...
 Checking for code snippets files...
 Copying images and creating the media map file...
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\icons\PallyCon.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\media\PallyCon.png
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\icons\PallyCon.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\media\PallyCon.png
 Generating conceptual topic files
-    Parsing topic file &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\Welcome.aml&#39;
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\Welcome.aml -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\4cebabd7-71e1-407d-853b-bcada2858c62.xml
-    Parsing topic file &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\VersionHistory.aml&#39;
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\VersionHistory.aml -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\f64ec905-4fb9-45c2-93c4-1986fb790ace.xml
-    Parsing topic file &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.0.aml&#39;
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.0.aml -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\3bd4b4a6-b340-4440-acc4-5e28b1500089.xml
-    Parsing topic file &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.1.aml&#39;
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.1.aml -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\bdeee65b-2f98-4a20-b314-7a0fc9621927.xml
-    Parsing topic file &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.2.aml&#39;
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.2.aml -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\9d221e9c-2655-4266-b2ac-3d9d91207d0a.xml
-    Parsing topic file &#39;I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.3.aml&#39;
-    I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.3.aml -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\eff10a9d-e9b5-42b8-a2bd-da024ee5212e.xml
-    Last step completed in 00:00:00.1283
+    Parsing topic file &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\Welcome.aml&#39;
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\Welcome.aml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\4cebabd7-71e1-407d-853b-bcada2858c62.xml
+    Parsing topic file &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\VersionHistory.aml&#39;
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\VersionHistory.aml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\f64ec905-4fb9-45c2-93c4-1986fb790ace.xml
+    Parsing topic file &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.0.aml&#39;
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.0.aml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\3bd4b4a6-b340-4440-acc4-5e28b1500089.xml
+    Parsing topic file &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.1.aml&#39;
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.1.aml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\bdeee65b-2f98-4a20-b314-7a0fc9621927.xml
+    Parsing topic file &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.2.aml&#39;
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.2.aml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\9d221e9c-2655-4266-b2ac-3d9d91207d0a.xml
+    Parsing topic file &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.3.aml&#39;
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.3.aml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\eff10a9d-e9b5-42b8-a2bd-da024ee5212e.xml
+    Parsing topic file &#39;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.4.aml&#39;
+    D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.4.aml -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\80976ec7-6a7d-43e0-98f0-b628fc911a69.xml
+    Last step completed in 00:00:00.0520
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00.0156
+    Last step completed in 00:00:00.0070
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
-I:\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\icons\Help.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0175
+D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\icons\Help.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\Help.png
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0040
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-빌드 시작: 2018-09-13 오전 11:11:23
-1 노드의 &quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateIntermediateTOC.proj&quot; 프로젝트(기본 대상)입니다.
+빌드 시작: 2021-06-07 오전 10:33:35
+1 노드의 &quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateIntermediateTOC.proj&quot; 프로젝트(기본 대상)입니다.
 GenerateIntermediateTOC:
   XslTransform (v2017.12.30.2)
   Copyright ⓒ 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ⓒ 2006-2016, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
-&quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateIntermediateTOC.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
+&quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateIntermediateTOC.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.3217
+    Last step completed in 00:00:00.4716
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.3335
+    Last step completed in 00:00:00.0930
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
-I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\sandcastle.config
+D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\sandcastle.config
   Updating reference topic configurations.
     Added configuration for &#39;API Token Resolution&#39; before &#39;Show Missing Documentation Component&#39; (instance 1)
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
@@ -172,122 +176,34 @@ I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\sandcastle.config
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
     Replacing default configuration for &#39;Syntax Component&#39; with the custom configuration
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0150
+    Last step completed in 00:00:00.0090
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-빌드 시작: 2018-09-13 오전 11:11:24
-1 노드의 &quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj&quot; 프로젝트(기본 대상)입니다.
+빌드 시작: 2021-06-07 오전 10:33:36
+1 노드의 &quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj&quot; 프로젝트(기본 대상)입니다.
 BuildTopics:
   BuildAssembler (v2017.12.30.2)
   Copyright ⓒ 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ⓒ 2006-2016, Eric Woodruff, All Rights Reserved.
   Loading configuration...
   Processing topics...
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.DownloadFailException] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadFailException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadFailException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadFailException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;inner&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadFailException.#ctor(System.String,Windows.Web.Http.HttpResponseMessage)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadFailException.#ctor(System.String,Windows.Web.Http.HttpResponseMessage)] Missing &lt;param name=&quot;response&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:PallyConSDK.DownloadFailException.response] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.InvalidOperationException] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.InvalidOperationException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.InvalidOperationException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.InvalidOperationException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;inner&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.LicenseIssuingException] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.LicenseIssuingException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.LicenseIssuingException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.LicenseIssuingException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;inner&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.MakeContentHeaderException] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.MakeContentHeaderException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.MakeContentHeaderException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.MakeContentHeaderException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.ManifestParsingException] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.ManifestParsingException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.ManifestParsingException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.ManifestParsingException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;inner&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.NotFoundException] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.NotFoundException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.NotFoundException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.NotFoundException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;inner&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.PallyConPRSDK] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.ConfigureHardwareDRM(Windows.UI.Xaml.Controls.MediaElement)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.ConfigureHardwareDRM(Windows.UI.Xaml.Controls.MediaElement)] Missing &lt;param name=&quot;mediaElement&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.ConfigureSoftwareDRM(Windows.UI.Xaml.Controls.MediaElement)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.ConfigureSoftwareDRM(Windows.UI.Xaml.Controls.MediaElement)] Missing &lt;param name=&quot;mediaElement&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;contentId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;contentName&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;contentUrl&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;SendRequest&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;ProgressHandler&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;CompleteHandler&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;FailHandler&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;userId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;contentId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;optionalId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Missing &lt;param name=&quot;customData&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Missing &lt;param name=&quot;token&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProxyServer] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PallyConSDK.PallyConPRSDK.GetInstance] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicense(System.String,System.String,System.String,System.String,System.String)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicense(System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;contentUrl&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicense(System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;licenseUrl&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicense(System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;userId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicense(System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;contentId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicense(System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;optionalId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicenseByToken(System.String,System.String,System.String)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicenseByToken(System.String,System.String,System.String)] Missing &lt;param name=&quot;contentUrl&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicenseByToken(System.String,System.String,System.String)] Missing &lt;param name=&quot;licenseUrl&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicenseByToken(System.String,System.String,System.String)] Missing &lt;param name=&quot;token&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.Initialize(System.String,System.String)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.Initialize(System.String,System.String)] Missing &lt;param name=&quot;siteId&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.Initialize(System.String,System.String)] Missing &lt;param name=&quot;siteKey&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.PallyConSDKException] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConSDKException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConSDKException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConSDKException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.DownloadTask.DownloadCompleteHandler] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.DownloadTask.DownloadFailHandler] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.DownloadTask.DownloadProgressChangedHandler] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.DownloadTask.DownloadSendRequest] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.DownloadTask.PallyConDownloadTask] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.PallyConDownloadTask.Cancel] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PallyConSDK.DownloadTask.PallyConDownloadTask.ContentId] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.PallyConDownloadTask.Pause] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.PallyConDownloadTask.Resume] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.PallyConDownloadTask.Start] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.GetContentUri(System.String)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.GetContentUri(System.String)] Missing &lt;param name=&quot;contentName&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.GetSubTitleUrl(System.Uri,System.String)] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.GetSubTitleUrl(System.Uri,System.String)] Missing &lt;param name=&quot;mpdUri&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.GetSubTitleUrl(System.Uri,System.String)] Missing &lt;param name=&quot;contentName&quot;/&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.Initialize] Missing &lt;summary&gt; documentation [I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-  Processed 79 topic(s)
-  90 warning(s)
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+  Processed 80 topic(s)
+  3 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 6 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
-  SaveComponent: Waiting for the document writer task to finish (2 Website API file(s) remaining)...
-&quot;I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
-    Last step completed in 00:00:03.8684
+&quot;D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
+    Last step completed in 00:00:03.9570
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -298,119 +214,119 @@ E-Mail: Eric@EWoodruff.us
 
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
-Processing website files in I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website
-Processed 79 HTML files
+Processing website files in D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website
+Processed 80 HTML files
 Sorting keywords and generating See Also indices
-Saving website keyword index to I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\WebKI.xml
-Saving website table of contents to I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\WebTOC.xml
-    Last step completed in 00:00:00.3847
+Saving website keyword index to D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\WebKI.xml
+Saving website table of contents to D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\WebTOC.xml
+    Last step completed in 00:00:00.4730
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\AlertCaution.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\AlertNote.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\AlertSecurity.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\CFW.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\CodeExample.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\favicon.ico
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privclass.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privdelegate.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privenumeration.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privevent.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privextension.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privfield.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privinterface.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privmethod.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privproperty.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privstructure.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protclass.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protdelegate.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protenumeration.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protevent.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protextension.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protfield.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protinterface.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protmethod.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protoperator.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protproperty.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protstructure.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubclass.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubdelegate.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubenumeration.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubevent.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubextension.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubfield.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubinterface.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubmethod.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\puboperator.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubproperty.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubstructure.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\SectionCollapsed.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\SectionExpanded.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\slMobile.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\static.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\xna.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\branding.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-cs-CZ.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-de-DE.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-en-US.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-es-ES.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-fr-FR.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-Help1.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-HelpViewer.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-it-IT.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-ja-JP.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-ko-KR.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-pl-PL.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-pt-BR.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-ru-RU.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-tr-TR.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-Website.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-zh-CN.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-zh-TW.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\index.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\search.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\SearchHelp.aspx
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\SearchHelp.inc.php
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\SearchHelp.php
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\Web.Config
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\GeneralError.htm -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\html\GeneralError.htm
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\PageNotFound.htm -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\html\PageNotFound.htm
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\Search.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocClose.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocCollapsed.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocExpanded.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocOpen.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\branding-Website.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\clipboard.min.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; I:\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00.4362
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\GeneralError.htm -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\html\GeneralError.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\PageNotFound.htm -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\html\PageNotFound.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\works\PallyCon_GIT\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00.4195
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:00.1631
+</plugIn>    Last step completed in 00:00:00.1220
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 211 files for the website content
-    Last step completed in 00:00:00.1880
+Copied 214 files for the website content
+    Last step completed in 00:00:00.2200
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.2204
+    Last step completed in 00:00:00.0930
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 2018-09-13 오전 11:11:29.  Total time: 00:00:11.0003
+Build completed successfully at 2021-06-07 오전 10:33:41.  Total time: 00:00:09.9096
 
 </buildStep>
 </shfbBuild>

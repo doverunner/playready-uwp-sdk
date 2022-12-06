@@ -1,0 +1,72 @@
+﻿{
+  "Reactive": [
+    {
+      "Title": "Movie",
+      "Description": "Movie Description",
+      "DrmType": "PlayReady",
+      "Url": "Contents Remote URL",
+      "Token": "",
+      "CustomData": "Custom Data",
+      "ContentID": "Content ID",
+      "UserID": "User ID",
+      "OptionalID": "Optional ID",
+      "ImagePath": "Content Image.png"
+    }
+  ],
+  "Proactive": [
+    {
+      "Title": "Movie",
+      "Description": "Movie Description",
+      "DrmType": "PlayReady",
+      "Url": "Contents Remote URL",
+      "Token": "",
+      "CustomData": "Custom Data",
+      "ContentID": "Content ID",
+      "UserID": "User ID",
+      "OptionalID": "Optional ID",
+      "ImagePath": "Content Image.png"
+    }
+  ],
+  "HWDRM": [
+    {
+      "Title": "Movie",
+      "Description": "Movie Description",
+      "DrmType": "PlayReady",
+      "Url": "Contents Remote URL",
+      "Token": "",
+      "CustomData": "Custom Data",
+      "ContentID": "Content ID",
+      "UserID": "User ID",
+      "OptionalID": "Optional ID",
+      "ImagePath": "Content Image.png"
+    }
+  ],
+  "Download": [
+    {
+      "Title": "Movie",
+      "Description": "Movie Description",
+      "DrmType": "PlayReady",
+      "Url": "Contents Remote URL",
+      "Token": "",
+      "CustomData": "Custom Data",
+      "ContentID": "Content ID",
+      "UserID": "User ID",
+      "OptionalID": "Optional ID",
+      "ImagePath": "Content Image.png"
+    }
+  ],
+  "Clear": [
+    {
+      "Title": "Movie",
+      "Description": "Movie Description",
+      "DrmType": "PlayReady",
+      "Url": "Contents Remote URL",
+      "Token": "",
+      "CustomData": "Custom Data",
+      "ContentID": "Content ID",
+      "UserID": "User ID",
+      "OptionalID": "Optional ID",
+      "ImagePath": "Content Image.png"
+    }
+  ]
+}
