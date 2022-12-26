@@ -39,7 +39,7 @@
         <Button Style="{StaticResource SplitViewTogglePaneButtonStyle}"
                     VerticalAlignment="Center"
                     Click="ShowSliptView"/>
-        <TextBlock Text="Clear Contents" 
+        <TextBlock Text="Non-Encryption Contents" 
                        VerticalAlignment="Center"
                        Style="{ThemeResource TitleTextBlockStyle}" 
                        Grid.Column="1"/>

@@ -21,9 +21,9 @@ namespace PallyConPRSDKSample
         // PallyCon License Acqusition URL
         private string LA_URL = "https://license.pallycon.com/ri/licenseManager.do";
         // PallyCon Site ID
-        private string SITE_ID = " ";
+        private string SITE_ID = ""; // Your site id
         // PallyCon Site Key
-        private string SITE_KEY = " ";
+        private string SITE_KEY = ""; // Your site key
         // PallyCon PlayReady SDK
         public static PallyConPRSDK PPSDK = PallyConPRSDK.GetInstance;
         // PlayReady Information
@@ -39,11 +39,11 @@ namespace PallyConPRSDKSample
         /// </summary>
         /// <param name="siteid"> PallyCon Site ID</param>
         /// <param name="sitekey"> PallyCon Site Key</param>
-        public PallyConPRSDKWrapper(string siteid = "SITE_ID", string sitekey = "SITE_KEY")
+        public PallyConPRSDKWrapper()
         {
             try
             {
-                PPSDK.Initialize(siteid, sitekey);
+                PPSDK.Initialize(SITE_ID, SITE_KEY);
                 PallyConViewModelBase.ClearLog();
             }
             catch (PallyConSDKException e)

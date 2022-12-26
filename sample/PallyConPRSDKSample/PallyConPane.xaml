@@ -35,7 +35,7 @@
                             Style="{StaticResource HomeButtonStyle}" 
                             HorizontalAlignment="Stretch" 
                             HorizontalContentAlignment="Left" />
-                <Button Content="Clear Contents" 
+                <Button Content="Non-Encryption Contents" 
                             Click="ClearContents_Click" 
                             Style="{StaticResource HomeButtonStyle}" 
                             HorizontalAlignment="Stretch" 
