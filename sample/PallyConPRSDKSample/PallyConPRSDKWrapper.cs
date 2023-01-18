@@ -19,7 +19,7 @@ namespace PallyConPRSDKSample
     class PallyConPRSDKWrapper : PallyConViewModelBase
     {
         // PallyCon License Acqusition URL
-        private string LA_URL = "https://license.pallycon.com/ri/licenseManager.do";
+        private string LA_URL = "https://license-global.pallycon.com/ri/licenseManager.do";
         // PallyCon Site ID
         private string SITE_ID = ""; // Your site id
         // PallyCon Site Key
@@ -74,11 +74,11 @@ namespace PallyConPRSDKSample
 
                 // If there is no TOKEN information, the UserID, ContentID and OptionalID can be requested for licensing.
                 if (content.Token.Length > 10)
-                    ProtectionManager = await PPSDK.CreateProtectionManagerByToken(content.Token, isProactive);
+                    ProtectionManager = await PPSDK.CreateProtectionManagerByToken(content.Token, LA_URL, isProactive);
                 else if (content.CustomData.Length > 10)
-                    ProtectionManager = await PPSDK.CreateProtectionManagerByCustomData(content.CustomData, isProactive);
+                    ProtectionManager = await PPSDK.CreateProtectionManagerByCustomData(content.CustomData, LA_URL, isProactive);
                 else
-                    ProtectionManager = await PPSDK.CreateProtectionManager(content.UserID, content.ContentID, content.OptionalID, isProactive);
+                    ProtectionManager = await PPSDK.CreateProtectionManager(content.UserID, content.ContentID, content.OptionalID, LA_URL, isProactive);
                 PlayReadyInfo = new PallyConPlayReadyInfoViewModel();
                 PlayReadyInfo.RefreshStatics();
 

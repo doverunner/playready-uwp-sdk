@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.12.10.0" projectFile="E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\PallyConPRSDKAPI.shfbproj" started="2022-12-26 오후 3:22:56">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.12.10.0" projectFile="E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\PallyConPRSDKAPI.shfbproj" started="2023-01-18 오후 4:09:43">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -32,7 +32,7 @@ SHFB: Warning BE0062: No documentation source XML comments files found.  The hel
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.0040
+</plugIn>    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
@@ -41,7 +41,7 @@ Generating API filter for MRefBuilder...
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-빌드 시작: 2022-12-26 오후 3:22:57
+빌드 시작: 2023-01-18 오후 4:09:44
 1 노드의 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateRefInfo.proj&quot; 프로젝트(기본 대상)입니다.
 PrepareForBuild:
   &quot;obj\Debug\&quot; 디렉터리를 만들고 있습니다.
@@ -60,12 +60,12 @@ GenerateRefInfo:
   Portions Copyright ⓒ 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateRefInfo.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
-    Last step completed in 00:00:02.0850
+    Last step completed in 00:00:01.1260
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-빌드 시작: 2022-12-26 오후 3:22:59
+빌드 시작: 2023-01-18 오후 4:09:45
 1 노드의 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\TransformManifest.proj&quot; 프로젝트(기본 대상)입니다.
 TransformManifest:
   XslTransform (v2018.12.10.0)
@@ -97,11 +97,11 @@ TransformManifest:
   Portions Copyright ⓒ 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\TransformManifest.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
-    Last step completed in 00:00:01.3162
+    Last step completed in 00:00:00.5030
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0160
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -127,7 +127,9 @@ Generating conceptual topic files
     E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.4.aml -&gt; E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\80976ec7-6a7d-43e0-98f0-b628fc911a69.xml
     Parsing topic file &#39;E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.5.0.aml&#39;
     E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.5.0.aml -&gt; E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\27392f5a-8597-4215-9be8-87a4bafe6fd2.xml
-    Last step completed in 00:00:00.0519
+    Parsing topic file &#39;E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.6.0.aml&#39;
+    E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\Content\VersionHistory\v1.6.0.aml -&gt; E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\ddueXml\3a28faa0-6caa-4425-8acc-c6541994de91.xml
+    Last step completed in 00:00:00.0563
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
@@ -139,7 +141,7 @@ Creating conceptual topic configuration files...
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 E:\project\PallyCon-PlayReady-UWP-SDK\PallyConPRSDKAPI\icons\Help.png -&gt; E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0040
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -148,7 +150,7 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-빌드 시작: 2022-12-26 오후 3:23:00
+빌드 시작: 2023-01-18 오후 4:09:46
 1 노드의 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateIntermediateTOC.proj&quot; 프로젝트(기본 대상)입니다.
 GenerateIntermediateTOC:
   XslTransform (v2018.12.10.0)
@@ -157,12 +159,12 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\GenerateIntermediateTOC.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.0037
+    Last step completed in 00:00:00.2300
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0610
+    Last step completed in 00:00:00.0595
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -181,7 +183,7 @@ E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\sandcastle.co
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-빌드 시작: 2022-12-26 오후 3:23:01
+빌드 시작: 2023-01-18 오후 4:09:46
 1 노드의 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj&quot; 프로젝트(기본 대상)입니다.
 BuildTopics:
   BuildAssembler (v2018.12.10.0)
@@ -233,20 +235,23 @@ BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.Cr
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;ProgressHandler&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;CompleteHandler&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateDownloadTask(System.String,System.String,System.String,PallyConSDK.DownloadTask.DownloadSendRequest,PallyConSDK.DownloadTask.DownloadProgressChangedHandler,PallyConSDK.DownloadTask.DownloadCompleteHandler,PallyConSDK.DownloadTask.DownloadFailHandler)] Missing &lt;param name=&quot;FailHandler&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;userId&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;contentId&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;optionalId&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Missing &lt;param name=&quot;customData&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Missing &lt;param name=&quot;token&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;userId&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;contentId&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;optionalId&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;drmLicenseUrl&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManager(System.String,System.String,System.String,System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;customData&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;drmLicenseUrl&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByCustomData(System.String,System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;token&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;drmLicenseUrl&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;isProactive&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:PallyConSDK.PallyConPRSDK.CreateProtectionManagerByToken(System.String,System.String,System.Boolean)] Unknown reference link target &#39;T:Windows.Media.Protection.MediaProtectionManager&#39;. [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.CreateProxyServer] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:PallyConSDK.PallyConPRSDK.GetInstance] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.PallyConPRSDK.GetLicense(System.String,System.String,System.String,System.String,System.String)] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
@@ -283,14 +288,14 @@ BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.Pro
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.GetSubTitleUrl(System.Uri,System.String)] Missing &lt;param name=&quot;mpdUri&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.GetSubTitleUrl(System.Uri,System.String)] Missing &lt;param name=&quot;contentName&quot;/&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PallyConSDK.DownloadTask.ProxyServer.PallyConProxyServer.Initialize] Missing &lt;summary&gt; documentation [E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj]
-  Processed 81 topic(s)
-  91 warning(s)
+  Processed 82 topic(s)
+  94 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 6 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
 &quot;E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\BuildTopics.proj&quot; 프로젝트를 빌드했습니다(기본 대상).
-    Last step completed in 00:00:25.7205
+    Last step completed in 00:00:24.7005
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
@@ -306,11 +311,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website
-Processed 81 HTML files
+Processed 82 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\WebKI.xml
 Saving website table of contents to E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\WebTOC.xml
-    Last step completed in 00:00:00.7342
+    Last step completed in 00:00:00.2309
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -392,32 +397,32 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-3.3.1.min.js -&gt; E:\project\PallyCon-PlayReady-UWP-SDK\Output\doc\resources\Working\Output\Website\scripts\jquery-3.3.1.min.js
-    Last step completed in 00:00:00.3399
+    Last step completed in 00:00:00.3529
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0010
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:00.0663
+</plugIn>    Last step completed in 00:00:00.1270
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 213 files for the website content
-    Last step completed in 00:00:00.1240
+Copied 215 files for the website content
+    Last step completed in 00:00:00.1340
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0800
+    Last step completed in 00:00:00.0850
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 2022-12-26 오후 3:23:28.  Total time: 00:00:32.5853
+Build completed successfully at 2023-01-18 오후 4:10:11.  Total time: 00:00:28.6725
 
 </buildStep>
 </shfbBuild>
