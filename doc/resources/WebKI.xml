@@ -66,6 +66,7 @@
   <HelpKINode Title="PallyConDownloadTask.Pause method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Pause.htm" />
   <HelpKINode Title="PallyConDownloadTask.Resume method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Resume.htm" />
   <HelpKINode Title="PallyConDownloadTask.Start method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Start.htm" />
+  <HelpKINode Title="PallyConLicenseRequest delegate" Url="html/T_PallyConSDK_PallyConLicenseRequest.htm" />
   <HelpKINode Title="PallyConProxyServer class">
     <HelpKINode Title="PallyConProxyServer Class" Url="html/T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm" />
@@ -89,6 +90,7 @@
   <HelpKINode Title="PallyConPRSDK.GetLicense method" Url="html/M_PallyConSDK_PallyConPRSDK_GetLicense.htm" />
   <HelpKINode Title="PallyConPRSDK.GetLicenseByToken method" Url="html/M_PallyConSDK_PallyConPRSDK_GetLicenseByToken.htm" />
   <HelpKINode Title="PallyConPRSDK.Initialize method" Url="html/M_PallyConSDK_PallyConPRSDK_Initialize.htm" />
+  <HelpKINode Title="PallyConPRSDK.SetPallyConLicenseRequestCallback method" Url="html/M_PallyConSDK_PallyConPRSDK_SetPallyConLicenseRequestCallback.htm" />
   <HelpKINode Title="PallyConSDK namespace" Url="html/N_PallyConSDK.htm" />
   <HelpKINode Title="PallyConSDK.DownloadFailException class" Url="html/T_PallyConSDK_DownloadFailException.htm" />
   <HelpKINode Title="PallyConSDK.DownloadTask namespace" Url="html/N_PallyConSDK_DownloadTask.htm" />
@@ -104,6 +106,7 @@
   <HelpKINode Title="PallyConSDK.MakeContentHeaderException class" Url="html/T_PallyConSDK_MakeContentHeaderException.htm" />
   <HelpKINode Title="PallyConSDK.ManifestParsingException class" Url="html/T_PallyConSDK_ManifestParsingException.htm" />
   <HelpKINode Title="PallyConSDK.NotFoundException class" Url="html/T_PallyConSDK_NotFoundException.htm" />
+  <HelpKINode Title="PallyConSDK.PallyConLicenseRequest delegate" Url="html/T_PallyConSDK_PallyConLicenseRequest.htm" />
   <HelpKINode Title="PallyConSDK.PallyConPRSDK class" Url="html/T_PallyConSDK_PallyConPRSDK.htm" />
   <HelpKINode Title="PallyConSDK.PallyConSDKException class" Url="html/T_PallyConSDK_PallyConSDKException.htm" />
   <HelpKINode Title="PallyConSDKException class">
@@ -114,6 +117,7 @@
   <HelpKINode Title="Pause method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Pause.htm" />
   <HelpKINode Title="response field" Url="html/F_PallyConSDK_DownloadFailException_response.htm" />
   <HelpKINode Title="Resume method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Resume.htm" />
+  <HelpKINode Title="SetPallyConLicenseRequestCallback method" Url="html/M_PallyConSDK_PallyConPRSDK_SetPallyConLicenseRequestCallback.htm" />
   <HelpKINode Title="Start method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Start.htm" />
   <HelpKINode Title="version">
     <HelpKINode Title="1.0" Url="html/3bd4b4a6-b340-4440-acc4-5e28b1500089.htm" />
