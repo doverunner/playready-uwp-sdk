@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,10 +20,6 @@ namespace PallyConPRSDKSample
     {
         // PallyCon License Acqusition URL
         private string LA_URL = "https://license-global.pallycon.com/ri/licenseManager.do";
-        // PallyCon Site ID
-        private string SITE_ID = ""; // Your site id
-        // PallyCon Site Key
-        private string SITE_KEY = ""; // Your site key
         // PallyCon PlayReady SDK
         public static PallyConPRSDK PPSDK = PallyConPRSDK.GetInstance;
         // PlayReady Information
@@ -43,7 +39,7 @@ namespace PallyConPRSDKSample
         {
             try
             {
-                PPSDK.Initialize(SITE_ID, SITE_KEY);
+                PPSDK.Initialize();
                 PallyConViewModelBase.ClearLog();
             }
             catch (PallyConSDKException e)
@@ -52,6 +48,15 @@ namespace PallyConPRSDKSample
                 System.Diagnostics.Debug.WriteLine(log);
                 PallyConViewModelBase.Log(log);
             }
+        }
+
+        /// <summary>
+        /// Set up callbacks for PallyCon license requests.
+        /// </summary>
+        /// <param name="licenseRequest"> License request callback </param>
+        public void SetPallyConLicenseRequestCallback(PallyConLicenseRequest licenseRequest)
+        {
+            PPSDK.SetPallyConLicenseRequestCallback(licenseRequest);
         }
 
         /// <summary>
