@@ -2,7 +2,7 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome to the PallyCon PlayReady SDK" Url="html/4cebabd7-71e1-407d-853b-bcada2858c62.htm" />
-  <HelpTOCNode Id="304b6647-d2da-4f1f-bd82-5f48d7aa81d7" Title="Version History" Url="html/f64ec905-4fb9-45c2-93c4-1986fb790ace.htm">
+  <HelpTOCNode Id="030e0cc3-f2bd-422f-b34c-1aa6d5a7008b" Title="Version History" Url="html/f64ec905-4fb9-45c2-93c4-1986fb790ace.htm">
     <HelpTOCNode Title="Version 1.0" Url="html/3bd4b4a6-b340-4440-acc4-5e28b1500089.htm" />
     <HelpTOCNode Title="Version 1.1" Url="html/bdeee65b-2f98-4a20-b314-7a0fc9621927.htm" />
     <HelpTOCNode Title="Version 1.2" Url="html/9d221e9c-2655-4266-b2ac-3d9d91207d0a.htm" />
@@ -11,91 +11,92 @@
     <HelpTOCNode Title="Version 1.5.0" Url="html/27392f5a-8597-4215-9be8-87a4bafe6fd2.htm" />
     <HelpTOCNode Title="Version 1.6.0" Url="html/3a28faa0-6caa-4425-8acc-c6541994de91.htm" />
     <HelpTOCNode Title="Version 1.7.0" Url="html/9e4cd58c-9993-41c9-9068-f8c1088e13af.htm" />
+    <HelpTOCNode Title="Version 1.8.0" Url="html/e31cd90e-362f-4d75-9b6d-f5210a28f546.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="411ec491-6caf-465c-aaad-95a35f269deb" Title="PallyConSDK" Url="html/N_PallyConSDK.htm">
-    <HelpTOCNode Id="9e5be432-c3a0-4da7-bbb0-13701ee206bd" Title="DownloadFailException Class" Url="html/T_PallyConSDK_DownloadFailException.htm">
-      <HelpTOCNode Id="33e17d6e-e8a0-4890-b000-e79ba2487931" Title="DownloadFailException Constructor " Url="html/Overload_PallyConSDK_DownloadFailException__ctor.htm">
+  <HelpTOCNode Id="744ad1d4-c856-43f7-93fc-c654c817580c" Title="PallyConSDK" Url="html/N_PallyConSDK.htm">
+    <HelpTOCNode Id="99ac7680-2610-49e2-ae28-e8c5f280156e" Title="DownloadFailException Class" Url="html/T_PallyConSDK_DownloadFailException.htm">
+      <HelpTOCNode Id="4c223298-d892-4a94-8292-78ae4e229cf3" Title="DownloadFailException Constructor " Url="html/Overload_PallyConSDK_DownloadFailException__ctor.htm">
         <HelpTOCNode Title="DownloadFailException Constructor " Url="html/M_PallyConSDK_DownloadFailException__ctor.htm" />
         <HelpTOCNode Title="DownloadFailException Constructor (String)" Url="html/M_PallyConSDK_DownloadFailException__ctor_1.htm" />
         <HelpTOCNode Title="DownloadFailException Constructor (String, Exception)" Url="html/M_PallyConSDK_DownloadFailException__ctor_2.htm" />
         <HelpTOCNode Title="DownloadFailException Constructor (String, HttpResponseMessage)" Url="html/M_PallyConSDK_DownloadFailException__ctor_3.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="4b4cea63-ede2-40d4-be87-474d968c83e7" Title="DownloadFailException Fields" Url="html/Fields_T_PallyConSDK_DownloadFailException.htm">
+      <HelpTOCNode Id="5e6dcbf1-2832-4560-b360-d0057fdafc0e" Title="DownloadFailException Fields" Url="html/Fields_T_PallyConSDK_DownloadFailException.htm">
         <HelpTOCNode Title="response Field" Url="html/F_PallyConSDK_DownloadFailException_response.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9c52acbf-b485-4541-9ea5-7edc0c5170a3" Title="InvalidOperationException Class" Url="html/T_PallyConSDK_InvalidOperationException.htm">
-      <HelpTOCNode Id="66a8d69b-3468-4d3a-a5ca-3fce32cdd963" Title="InvalidOperationException Constructor " Url="html/Overload_PallyConSDK_InvalidOperationException__ctor.htm">
+    <HelpTOCNode Id="4b996d9e-a095-4b2e-9cb5-84f37c04b269" Title="InvalidOperationException Class" Url="html/T_PallyConSDK_InvalidOperationException.htm">
+      <HelpTOCNode Id="643b9d01-b634-4587-8c11-9d948afef7fd" Title="InvalidOperationException Constructor " Url="html/Overload_PallyConSDK_InvalidOperationException__ctor.htm">
         <HelpTOCNode Title="InvalidOperationException Constructor " Url="html/M_PallyConSDK_InvalidOperationException__ctor.htm" />
         <HelpTOCNode Title="InvalidOperationException Constructor (String)" Url="html/M_PallyConSDK_InvalidOperationException__ctor_1.htm" />
         <HelpTOCNode Title="InvalidOperationException Constructor (String, Exception)" Url="html/M_PallyConSDK_InvalidOperationException__ctor_2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="cf9b9edb-483f-464d-9108-6d346b8c99f2" Title="LicenseIssuingException Class" Url="html/T_PallyConSDK_LicenseIssuingException.htm">
-      <HelpTOCNode Id="bde24ff3-24ce-4846-8c8b-600b63c2f3af" Title="LicenseIssuingException Constructor " Url="html/Overload_PallyConSDK_LicenseIssuingException__ctor.htm">
+    <HelpTOCNode Id="b09f2e97-39c1-4bdc-9584-aab239d11bdf" Title="LicenseIssuingException Class" Url="html/T_PallyConSDK_LicenseIssuingException.htm">
+      <HelpTOCNode Id="c2b5557f-dfcf-48d7-88a7-27ef77e74c1c" Title="LicenseIssuingException Constructor " Url="html/Overload_PallyConSDK_LicenseIssuingException__ctor.htm">
         <HelpTOCNode Title="LicenseIssuingException Constructor " Url="html/M_PallyConSDK_LicenseIssuingException__ctor.htm" />
         <HelpTOCNode Title="LicenseIssuingException Constructor (String)" Url="html/M_PallyConSDK_LicenseIssuingException__ctor_1.htm" />
         <HelpTOCNode Title="LicenseIssuingException Constructor (String, Exception)" Url="html/M_PallyConSDK_LicenseIssuingException__ctor_2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f448d2d9-eaa1-4419-a2ca-7bb9e5b82d27" Title="MakeContentHeaderException Class" Url="html/T_PallyConSDK_MakeContentHeaderException.htm">
-      <HelpTOCNode Id="62ce6c5a-2496-4d65-9787-2edb0d659a6f" Title="MakeContentHeaderException Constructor " Url="html/Overload_PallyConSDK_MakeContentHeaderException__ctor.htm">
+    <HelpTOCNode Id="315d35e6-f3d9-4c03-be1c-87b7c3334be7" Title="MakeContentHeaderException Class" Url="html/T_PallyConSDK_MakeContentHeaderException.htm">
+      <HelpTOCNode Id="8cedcc83-71c3-451c-8a43-b39c315a8392" Title="MakeContentHeaderException Constructor " Url="html/Overload_PallyConSDK_MakeContentHeaderException__ctor.htm">
         <HelpTOCNode Title="MakeContentHeaderException Constructor " Url="html/M_PallyConSDK_MakeContentHeaderException__ctor.htm" />
         <HelpTOCNode Title="MakeContentHeaderException Constructor (String)" Url="html/M_PallyConSDK_MakeContentHeaderException__ctor_1.htm" />
         <HelpTOCNode Title="MakeContentHeaderException Constructor (String, Exception)" Url="html/M_PallyConSDK_MakeContentHeaderException__ctor_2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="4315333b-d000-44b5-967b-1054f57eee5f" Title="ManifestParsingException Class" Url="html/T_PallyConSDK_ManifestParsingException.htm">
-      <HelpTOCNode Id="67b9df36-e93c-4a8f-bc35-834409bcc17a" Title="ManifestParsingException Constructor " Url="html/Overload_PallyConSDK_ManifestParsingException__ctor.htm">
+    <HelpTOCNode Id="6e231a30-b107-495d-808a-a6a3ec49d54f" Title="ManifestParsingException Class" Url="html/T_PallyConSDK_ManifestParsingException.htm">
+      <HelpTOCNode Id="5bf6d839-aba0-4dda-858f-6792de61a893" Title="ManifestParsingException Constructor " Url="html/Overload_PallyConSDK_ManifestParsingException__ctor.htm">
         <HelpTOCNode Title="ManifestParsingException Constructor " Url="html/M_PallyConSDK_ManifestParsingException__ctor.htm" />
         <HelpTOCNode Title="ManifestParsingException Constructor (String)" Url="html/M_PallyConSDK_ManifestParsingException__ctor_1.htm" />
         <HelpTOCNode Title="ManifestParsingException Constructor (String, Exception)" Url="html/M_PallyConSDK_ManifestParsingException__ctor_2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a7ace240-544c-49ea-b696-bf022aaa7b74" Title="NotFoundException Class" Url="html/T_PallyConSDK_NotFoundException.htm">
-      <HelpTOCNode Id="b2818453-f911-4e19-b09d-ed9e1dddd9d0" Title="NotFoundException Constructor " Url="html/Overload_PallyConSDK_NotFoundException__ctor.htm">
+    <HelpTOCNode Id="e4af3b8f-79ed-4ed9-a54d-6acad194e43a" Title="NotFoundException Class" Url="html/T_PallyConSDK_NotFoundException.htm">
+      <HelpTOCNode Id="5cd22708-38a8-42d5-9193-3407875a2082" Title="NotFoundException Constructor " Url="html/Overload_PallyConSDK_NotFoundException__ctor.htm">
         <HelpTOCNode Title="NotFoundException Constructor " Url="html/M_PallyConSDK_NotFoundException__ctor.htm" />
         <HelpTOCNode Title="NotFoundException Constructor (String)" Url="html/M_PallyConSDK_NotFoundException__ctor_1.htm" />
         <HelpTOCNode Title="NotFoundException Constructor (String, Exception)" Url="html/M_PallyConSDK_NotFoundException__ctor_2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="PallyConLicenseRequest Delegate" Url="html/T_PallyConSDK_PallyConLicenseRequest.htm" />
-    <HelpTOCNode Id="6dfd32b8-c318-4eed-9d7f-61825f0c7d51" Title="PallyConPRSDK Class" Url="html/T_PallyConSDK_PallyConPRSDK.htm">
-      <HelpTOCNode Id="f1de3aed-e6e3-4aa8-97c8-e9f9252ec942" Title="PallyConPRSDK Properties" Url="html/Properties_T_PallyConSDK_PallyConPRSDK.htm">
+    <HelpTOCNode Id="ddb60443-4f4b-4963-94fd-4ec8a5d4b84c" Title="PallyConPRSDK Class" Url="html/T_PallyConSDK_PallyConPRSDK.htm">
+      <HelpTOCNode Id="1c5b1f5f-c75d-47b4-9824-45c0a76631e7" Title="PallyConPRSDK Properties" Url="html/Properties_T_PallyConSDK_PallyConPRSDK.htm">
         <HelpTOCNode Title="GetInstance Property " Url="html/P_PallyConSDK_PallyConPRSDK_GetInstance.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c2396389-2944-456e-bf40-ea4e3ac9a8fd" Title="PallyConPRSDK Methods" Url="html/Methods_T_PallyConSDK_PallyConPRSDK.htm">
+      <HelpTOCNode Id="36e66eef-acd4-4170-97c1-36445b35b888" Title="PallyConPRSDK Methods" Url="html/Methods_T_PallyConSDK_PallyConPRSDK.htm">
         <HelpTOCNode Title="ConfigureHardwareDRM Method " Url="html/M_PallyConSDK_PallyConPRSDK_ConfigureHardwareDRM.htm" />
         <HelpTOCNode Title="ConfigureSoftwareDRM Method " Url="html/M_PallyConSDK_PallyConPRSDK_ConfigureSoftwareDRM.htm" />
         <HelpTOCNode Title="CreateDownloadTask Method " Url="html/M_PallyConSDK_PallyConPRSDK_CreateDownloadTask.htm" />
         <HelpTOCNode Title="CreateProtectionManager Method " Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManager.htm" />
         <HelpTOCNode Title="CreateProtectionManagerByCustomData Method " Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManagerByCustomData.htm" />
         <HelpTOCNode Title="CreateProtectionManagerByToken Method " Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManagerByToken.htm" />
-        <HelpTOCNode Title="CreateProxyServer Method " Url="html/M_PallyConSDK_PallyConPRSDK_CreateProxyServer.htm" />
+        <HelpTOCNode Title="CreateProxyServerAsync Method " Url="html/M_PallyConSDK_PallyConPRSDK_CreateProxyServerAsync.htm" />
         <HelpTOCNode Title="GetLicense Method " Url="html/M_PallyConSDK_PallyConPRSDK_GetLicense.htm" />
         <HelpTOCNode Title="GetLicenseByToken Method " Url="html/M_PallyConSDK_PallyConPRSDK_GetLicenseByToken.htm" />
         <HelpTOCNode Title="Initialize Method " Url="html/M_PallyConSDK_PallyConPRSDK_Initialize.htm" />
         <HelpTOCNode Title="SetPallyConLicenseRequestCallback Method " Url="html/M_PallyConSDK_PallyConPRSDK_SetPallyConLicenseRequestCallback.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="1637c62c-d609-4d70-b922-e1c38d0057af" Title="PallyConSDKException Class" Url="html/T_PallyConSDK_PallyConSDKException.htm">
-      <HelpTOCNode Id="40dcab64-d841-40c9-a2c0-a00827432a07" Title="PallyConSDKException Constructor " Url="html/Overload_PallyConSDK_PallyConSDKException__ctor.htm">
+    <HelpTOCNode Id="5ffc6979-fb95-49a8-aef1-8fd12e2edea1" Title="PallyConSDKException Class" Url="html/T_PallyConSDK_PallyConSDKException.htm">
+      <HelpTOCNode Id="28636139-3f85-4dd6-9ef7-6e5ccb8b0684" Title="PallyConSDKException Constructor " Url="html/Overload_PallyConSDK_PallyConSDKException__ctor.htm">
         <HelpTOCNode Title="PallyConSDKException Constructor " Url="html/M_PallyConSDK_PallyConSDKException__ctor.htm" />
         <HelpTOCNode Title="PallyConSDKException Constructor (String)" Url="html/M_PallyConSDK_PallyConSDKException__ctor_1.htm" />
         <HelpTOCNode Title="PallyConSDKException Constructor (String, Exception)" Url="html/M_PallyConSDK_PallyConSDKException__ctor_2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="a4bc99fa-f589-41e9-af35-736eb162e56f" Title="PallyConSDK.DownloadTask" Url="html/N_PallyConSDK_DownloadTask.htm">
+  <HelpTOCNode Id="282cf52c-412a-4a23-8f61-8cc0e8880505" Title="PallyConSDK.DownloadTask" Url="html/N_PallyConSDK_DownloadTask.htm">
     <HelpTOCNode Title="DownloadCompleteHandler Delegate" Url="html/T_PallyConSDK_DownloadTask_DownloadCompleteHandler.htm" />
     <HelpTOCNode Title="DownloadFailHandler Delegate" Url="html/T_PallyConSDK_DownloadTask_DownloadFailHandler.htm" />
     <HelpTOCNode Title="DownloadProgressChangedHandler Delegate" Url="html/T_PallyConSDK_DownloadTask_DownloadProgressChangedHandler.htm" />
     <HelpTOCNode Title="DownloadSendRequest Delegate" Url="html/T_PallyConSDK_DownloadTask_DownloadSendRequest.htm" />
-    <HelpTOCNode Id="99c2ab0c-65d9-4b5c-87f1-8e01bb6eb4a8" Title="PallyConDownloadTask Class" Url="html/T_PallyConSDK_DownloadTask_PallyConDownloadTask.htm">
-      <HelpTOCNode Id="9616530b-b1b4-4a9f-b64e-420b77e8c7d5" Title="PallyConDownloadTask Properties" Url="html/Properties_T_PallyConSDK_DownloadTask_PallyConDownloadTask.htm">
+    <HelpTOCNode Id="c284e3c5-e202-4f7d-97a0-d918ecdbd8b8" Title="PallyConDownloadTask Class" Url="html/T_PallyConSDK_DownloadTask_PallyConDownloadTask.htm">
+      <HelpTOCNode Id="d26c4bc3-9847-40b7-a1e3-b54eaeba2734" Title="PallyConDownloadTask Properties" Url="html/Properties_T_PallyConSDK_DownloadTask_PallyConDownloadTask.htm">
         <HelpTOCNode Title="ContentId Property " Url="html/P_PallyConSDK_DownloadTask_PallyConDownloadTask_ContentId.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d818b83e-c3dd-4495-82a1-8c1522ac9ddd" Title="PallyConDownloadTask Methods" Url="html/Methods_T_PallyConSDK_DownloadTask_PallyConDownloadTask.htm">
+      <HelpTOCNode Id="0f151c5c-8a6f-4724-bcf4-2f4c3f66cfc1" Title="PallyConDownloadTask Methods" Url="html/Methods_T_PallyConSDK_DownloadTask_PallyConDownloadTask.htm">
         <HelpTOCNode Title="Cancel Method " Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Cancel.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Dispose.htm" />
         <HelpTOCNode Title="Pause Method " Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Pause.htm" />
@@ -104,12 +105,13 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="f51a4d2b-b72c-4897-b511-4511735dd69e" Title="PallyConSDK.DownloadTask.ProxyServer" Url="html/N_PallyConSDK_DownloadTask_ProxyServer.htm">
-    <HelpTOCNode Id="38784871-8f93-4347-8301-f06bcd6e582c" Title="PallyConProxyServer Class" Url="html/T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm">
-      <HelpTOCNode Id="41de4b6b-4a12-49e8-8aea-eebe9614d5a1" Title="PallyConProxyServer Methods" Url="html/Methods_T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm">
+  <HelpTOCNode Id="4f8edc20-1431-4411-b5bd-2a7f2584532d" Title="PallyConSDK.DownloadTask.ProxyServer" Url="html/N_PallyConSDK_DownloadTask_ProxyServer.htm">
+    <HelpTOCNode Id="1fd8c904-fe4a-48b1-8d4f-1403f38df222" Title="PallyConProxyServer Class" Url="html/T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm">
+      <HelpTOCNode Id="123530ea-480c-4d55-8468-b48006e59f28" Title="PallyConProxyServer Methods" Url="html/Methods_T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm">
+        <HelpTOCNode Title="Close Method " Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_Close.htm" />
         <HelpTOCNode Title="GetContentUri Method " Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_GetContentUri.htm" />
         <HelpTOCNode Title="GetSubTitleUrl Method " Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_GetSubTitleUrl.htm" />
-        <HelpTOCNode Title="Initialize Method " Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_Initialize.htm" />
+        <HelpTOCNode Title="InitializeAsync Method " Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_InitializeAsync.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>

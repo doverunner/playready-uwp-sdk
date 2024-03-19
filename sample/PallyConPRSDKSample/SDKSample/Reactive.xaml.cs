@@ -53,7 +53,6 @@ namespace PallyConPRSDKSample.SDKSample
                 // Check if response_format is in json(custom) format
                 if (JsonObject.TryParse(await response.Content.ReadAsStringAsync(), out JsonObject jsonResponse))
                 {
-                    string test = jsonResponse.ToString();
                     if (jsonResponse.ContainsKey("license"))
                     {
                         string strLicense = jsonResponse["license"].Stringify();
@@ -117,7 +116,7 @@ namespace PallyConPRSDKSample.SDKSample
                 ContentInfo info = (ContentInfo)e.ClickedItem;
                 await PPSDKWrapper.SetPlayReady(mediaElement, info);
                 this.DataContext = PPSDKWrapper;
-                SetPlayerSubtitle(new Uri(info.Url), info.Title);
+                SetPlayerSubtitle(new Uri(info.Url), info);
                 mediaElement.Source = new Uri(info.Url);
             }
             catch (PallyConSDKException ex)
@@ -131,13 +130,13 @@ namespace PallyConPRSDKSample.SDKSample
             }
         }
 
-        private async void SetPlayerSubtitle(Uri mpdUri, string contentName)
+        private async void SetPlayerSubtitle(Uri mpdUri, ContentInfo content)
         {
             try
             {
                 MediaSource mediaSource = MediaSource.CreateFromUri(mpdUri);
 
-                var subtitleList = await PPSDKWrapper.GetSubtitleLIst(mpdUri, contentName);
+                var subtitleList = await PPSDKWrapper.GetSubtitleLIst(mpdUri, content);
                 if (subtitleList.Count != 0)
                 {
                     foreach (var subtitle in subtitleList)

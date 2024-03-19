@@ -64,7 +64,7 @@ namespace PallyConPRSDKSample.SDKSample
             try
             {
                 this.DataContext = null;
-                info.DownloadPlayUrl = await PPWrapper.GetPlayBackUri(info.Title);
+                info.DownloadPlayUrl = await PPWrapper.GetPlayBackUriAsync(info);
                 this.DataContext = PPWrapper;
                 mediaElement.Source = info.DownloadPlayUrl;
             }

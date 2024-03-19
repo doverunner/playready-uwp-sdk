@@ -27,7 +27,7 @@ using Windows.Web.Http;
 using Windows.Web.Http.Filters;
 using Windows.Media.Core;
 using Windows.Media.Playback;
-
+using Windows.Storage.Pickers;
 
 namespace PallyConPRSDKSample.SDKSample
 {
@@ -96,11 +96,11 @@ namespace PallyConPRSDKSample.SDKSample
             try
             {
                 this.DataContext = null;
-                info.DownloadPlayUrl = await PPSDKWapper.GetPlayBackUri(info.Title);
+                info.DownloadPlayUrl = await PPSDKWapper.GetPlayBackUriAsync(info);
                 await PPSDKWapper.SetPlayReady(mediaElement, info);
                 await PPSDKWapper.GetLicenseAsync(info);
                 this.DataContext = PPSDKWapper;
-                SetPlayerSubtitle(info.DownloadPlayUrl, info.Title);
+                SetPlayerSubtitle(info.DownloadPlayUrl, info);
                 mediaElement.Source = info.DownloadPlayUrl;
             }
             catch (LicenseIssuingException ex)
@@ -121,9 +121,9 @@ namespace PallyConPRSDKSample.SDKSample
                 {
                     isDownloading = true;
                     if (callbackRequest == null)
-                        PPSDKWapper.DownloadTaskAsync(info, null, DownloadProgress, DownloadComplete, DownloadFail);
+                        await PPSDKWapper.DownloadTaskAsync(info, null, DownloadProgress, DownloadComplete, DownloadFail);
                     else
-                        PPSDKWapper.DownloadTaskAsync(info, callbackRequest, DownloadProgress, DownloadComplete, DownloadFail);
+                        await PPSDKWapper.DownloadTaskAsync(info, callbackRequest, DownloadProgress, DownloadComplete, DownloadFail);
 
                     await PPSDKWapper.DownloadStart(info);
                 }
@@ -135,18 +135,22 @@ namespace PallyConPRSDKSample.SDKSample
             }
             catch (Exception ex)
             {
+                // 오류
+                PPSDKWapper.DownloadCancel(info.Title);
                 ContentDelete(info);
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+                MessageDialog dialog = new MessageDialog(ex.Message);
+                await dialog.ShowAsync();
             }
         }
 
-        private async void SetPlayerSubtitle(Uri mpdUri, string contentName)
+        private async void SetPlayerSubtitle(Uri mpdUri, ContentInfo content)
         {
             try
             {
                 MediaSource mediaSource = MediaSource.CreateFromUri(mpdUri);
 
-                var subtitleLists = await PPSDKWapper.GetSubtitleLIst(mpdUri, contentName);
+                var subtitleLists = await PPSDKWapper.GetSubtitleLIst(mpdUri, content);
                 if (subtitleLists.Count != 0)
                 {
                     foreach (var subtitle in subtitleLists)
@@ -193,12 +197,17 @@ namespace PallyConPRSDKSample.SDKSample
 
         private async Task<Boolean> IsContentExist(ContentInfo info)
         {
-            StorageFolder stroageFolder = ApplicationData.Current.LocalFolder;
-            if (info.ProgressVisibilty == Visibility.Collapsed &&
-                await IfStorageItemExist(stroageFolder, info.Title) == true)
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            if(info.downloadFolderPath != null)
             {
+                storageFolder = await StorageFolder.GetFolderFromPathAsync(info.downloadFolderPath);
+            }
+            if (await IfStorageItemExist(storageFolder, info.Title) == true)
+            {
+                info.ProgressVisibilty = Visibility.Collapsed;
                 return true;
             }
+ 
             return false;
         }
 
@@ -210,6 +219,17 @@ namespace PallyConPRSDKSample.SDKSample
                 mediaElement.Stop();
                 this.DataContext = null;
                 ContentInfo info = (ContentInfo)e.ClickedItem;
+                int clickedItemIndex = DownloadListView.Items.IndexOf(e.ClickedItem);
+                if (clickedItemIndex == 2)
+                {
+                    var folderPicker = new FolderPicker();
+                    folderPicker.FileTypeFilter.Add("*");
+                    StorageFolder folder = await folderPicker.PickSingleFolderAsync();
+                    if (folder != null)
+                    {
+                        info.downloadFolderPath = folder.Path;
+                    }
+                }
                 this.DataContext = PPSDKWapper;
                 if (await this.IsContentExist(info) == true)
                 {
@@ -247,7 +267,7 @@ namespace PallyConPRSDKSample.SDKSample
                 var item = DownloadListView.SelectedItem;
                 (item as ContentInfo).ProgressVisibilty = Visibility.Collapsed;
             }
-            StorageFolder stroageFolder = ApplicationData.Current.LocalFolder;
+
             ContentDelete(info);
         }
 
@@ -256,6 +276,10 @@ namespace PallyConPRSDKSample.SDKSample
             try
             {
                 StorageFolder stroageFolder = ApplicationData.Current.LocalFolder;
+                if(info.downloadFolderPath != null)
+                {
+                    stroageFolder = await StorageFolder.GetFolderFromPathAsync(info.downloadFolderPath);
+                }
 
                 var file = await stroageFolder.GetFolderAsync(info.Title);
                 if (file != null)

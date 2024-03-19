@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
   <HelpKINode Title="Cancel method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Cancel.htm" />
+  <HelpKINode Title="Close method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_Close.htm" />
   <HelpKINode Title="ConfigureHardwareDRM method" Url="html/M_PallyConSDK_PallyConPRSDK_ConfigureHardwareDRM.htm" />
   <HelpKINode Title="ConfigureSoftwareDRM method" Url="html/M_PallyConSDK_PallyConPRSDK_ConfigureSoftwareDRM.htm" />
   <HelpKINode Title="ContentId property" Url="html/P_PallyConSDK_DownloadTask_PallyConDownloadTask_ContentId.htm" />
@@ -8,7 +9,7 @@
   <HelpKINode Title="CreateProtectionManager method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManager.htm" />
   <HelpKINode Title="CreateProtectionManagerByCustomData method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManagerByCustomData.htm" />
   <HelpKINode Title="CreateProtectionManagerByToken method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManagerByToken.htm" />
-  <HelpKINode Title="CreateProxyServer method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProxyServer.htm" />
+  <HelpKINode Title="CreateProxyServerAsync method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProxyServerAsync.htm" />
   <HelpKINode Title="Dispose method" Url="html/M_PallyConSDK_DownloadTask_PallyConDownloadTask_Dispose.htm" />
   <HelpKINode Title="DownloadCompleteHandler delegate" Url="html/T_PallyConSDK_DownloadTask_DownloadCompleteHandler.htm" />
   <HelpKINode Title="DownloadFailException class">
@@ -26,10 +27,8 @@
   <HelpKINode Title="GetLicense method" Url="html/M_PallyConSDK_PallyConPRSDK_GetLicense.htm" />
   <HelpKINode Title="GetLicenseByToken method" Url="html/M_PallyConSDK_PallyConPRSDK_GetLicenseByToken.htm" />
   <HelpKINode Title="GetSubTitleUrl method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_GetSubTitleUrl.htm" />
-  <HelpKINode Title="Initialize method">
-    <HelpKINode Title="PallyConProxyServer.Initialize Method " Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_Initialize.htm" />
-    <HelpKINode Title="PallyConPRSDK.Initialize Method " Url="html/M_PallyConSDK_PallyConPRSDK_Initialize.htm" />
-  </HelpKINode>
+  <HelpKINode Title="Initialize method" Url="html/M_PallyConSDK_PallyConPRSDK_Initialize.htm" />
+  <HelpKINode Title="InitializeAsync method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_InitializeAsync.htm" />
   <HelpKINode Title="InvalidOperationException class">
     <HelpKINode Title="InvalidOperationException Class" Url="html/T_PallyConSDK_InvalidOperationException.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_PallyConSDK_InvalidOperationException__ctor.htm" />
@@ -71,9 +70,10 @@
     <HelpKINode Title="PallyConProxyServer Class" Url="html/T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer.htm" />
   </HelpKINode>
+  <HelpKINode Title="PallyConProxyServer.Close method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_Close.htm" />
   <HelpKINode Title="PallyConProxyServer.GetContentUri method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_GetContentUri.htm" />
   <HelpKINode Title="PallyConProxyServer.GetSubTitleUrl method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_GetSubTitleUrl.htm" />
-  <HelpKINode Title="PallyConProxyServer.Initialize method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_Initialize.htm" />
+  <HelpKINode Title="PallyConProxyServer.InitializeAsync method" Url="html/M_PallyConSDK_DownloadTask_ProxyServer_PallyConProxyServer_InitializeAsync.htm" />
   <HelpKINode Title="PallyConPRSDK class">
     <HelpKINode Title="PallyConPRSDK Class" Url="html/T_PallyConSDK_PallyConPRSDK.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PallyConSDK_PallyConPRSDK.htm" />
@@ -85,7 +85,7 @@
   <HelpKINode Title="PallyConPRSDK.CreateProtectionManager method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManager.htm" />
   <HelpKINode Title="PallyConPRSDK.CreateProtectionManagerByCustomData method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManagerByCustomData.htm" />
   <HelpKINode Title="PallyConPRSDK.CreateProtectionManagerByToken method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProtectionManagerByToken.htm" />
-  <HelpKINode Title="PallyConPRSDK.CreateProxyServer method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProxyServer.htm" />
+  <HelpKINode Title="PallyConPRSDK.CreateProxyServerAsync method" Url="html/M_PallyConSDK_PallyConPRSDK_CreateProxyServerAsync.htm" />
   <HelpKINode Title="PallyConPRSDK.GetInstance property" Url="html/P_PallyConSDK_PallyConPRSDK_GetInstance.htm" />
   <HelpKINode Title="PallyConPRSDK.GetLicense method" Url="html/M_PallyConSDK_PallyConPRSDK_GetLicense.htm" />
   <HelpKINode Title="PallyConPRSDK.GetLicenseByToken method" Url="html/M_PallyConSDK_PallyConPRSDK_GetLicenseByToken.htm" />

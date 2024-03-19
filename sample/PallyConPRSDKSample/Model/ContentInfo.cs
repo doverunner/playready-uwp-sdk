@@ -34,6 +34,7 @@ namespace PallyConPRSDKSample.Model
         public string UserID { get; set; }
         public string OptionalID { get; set; }
         public string ImagePath { get; set; }
+        public string downloadFolderPath { get; set; }
 
         public Visibility ProgressVisibilty { get; set; }
         public Uri DownloadPlayUrl { get; set; }
@@ -45,6 +46,7 @@ namespace PallyConPRSDKSample.Model
                            string token = "", string customData = "",
                            string contenId = "", string userid = "", 
                            string optionalid = "", string imagepath = "", 
+                           string downloadFolderPath = null,
                            Visibility progressVisibilty = Visibility.Visible)
         {
             this.Title = title;
@@ -57,6 +59,7 @@ namespace PallyConPRSDKSample.Model
             this.UserID = userid;
             this.OptionalID = optionalid;
             this.ImagePath = imagepath;
+            this.downloadFolderPath = downloadFolderPath;
             this.ProgressVisibilty = progressVisibilty;
             this.Subtitle = new List<string>();
         }
@@ -74,6 +77,7 @@ namespace PallyConPRSDKSample.Model
                 ContentID = this.ContentID,
                 OptionalID = this.OptionalID,
                 ImagePath = this.ImagePath,
+                downloadFolderPath = this.downloadFolderPath,
                 UserID = this.UserID
             };
 
@@ -138,7 +142,7 @@ namespace PallyConPRSDKSample.Model
                                                         groupObject["ImagePath"].GetString());
 
                     this.Groups.Add(group);
-                    DownloadedContent();
+                    DefaultDownloadedContent();
                 }
             }
         }
@@ -158,7 +162,7 @@ namespace PallyConPRSDKSample.Model
         //}
 
 
-        private void DownloadedContent()
+        private void DefaultDownloadedContent()
         {
             StorageFolder stroageFolder = ApplicationData.Current.LocalFolder;
             IEnumerator<ContentInfo> e = this._groups.GetEnumerator();

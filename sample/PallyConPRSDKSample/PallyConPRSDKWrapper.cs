@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,10 +31,8 @@ namespace PallyConPRSDKSample
         public PallyConProxyServer PROXY = null;
 
         /// <summary>
-        /// SITE ID and SITE KEY are the values you get when you join PallyCon. 
+        /// PallyCon Initialize. 
         /// </summary>
-        /// <param name="siteid"> PallyCon Site ID</param>
-        /// <param name="sitekey"> PallyCon Site Key</param>
         public PallyConPRSDKWrapper()
         {
             try
@@ -156,14 +154,14 @@ namespace PallyConPRSDKSample
         /// <param name="progresshandler">The handler that is called when the download progress changes.</param>
         /// <param name="completehandler">The handler that is called when the download is complete.</param>
         /// <param name="failhandler">The handler that is called when the download fails.</param>
-        public void DownloadTaskAsync(ContentInfo content, DownloadSendRequest sendrequest, DownloadProgressChangedHandler progresshandler, DownloadCompleteHandler completehandler, DownloadFailHandler failhandler)
+        public async Task DownloadTaskAsync(ContentInfo content, DownloadSendRequest sendrequest, DownloadProgressChangedHandler progresshandler, DownloadCompleteHandler completehandler, DownloadFailHandler failhandler)
         {
             try
             {
                 // Proxy Server Create
-                if (PROXY == null)
+                //if (PROXY == null)
                 {
-                    PROXY = PPSDK.CreateProxyServer();
+                    PROXY = await PPSDK.CreateProxyServerAsync(content.downloadFolderPath);
                 }
                 // DownloadTask Create
                 DOWNLOAD_TASK = PPSDK.CreateDownloadTask(content.ContentID, content.Title, content.Url, sendrequest, progresshandler, completehandler, failhandler);
@@ -185,11 +183,20 @@ namespace PallyConPRSDKSample
             try
             {
                 if (DOWNLOAD_TASK != null)
-                    await DOWNLOAD_TASK.Start();
+                {
+                    if(content.downloadFolderPath != null)
+                    {
+                        await DOWNLOAD_TASK.Start(content.downloadFolderPath);
+                    } else
+                    {
+                        await DOWNLOAD_TASK.Start();
+                    }
+                }
             }
             catch (Exception ex)
             {
                 PallyConViewModelBase.Log(ex.Message);
+                throw ex;
             }
         }
 
@@ -254,24 +261,20 @@ namespace PallyConPRSDKSample
         /// </summary>
         /// <param name="contentName">Enter the downloaded content information.</param>
         /// <returns></returns>
-        public Task<Uri> GetPlayBackUri(string contentName)
+        public async Task<Uri> GetPlayBackUriAsync(ContentInfo content)
         {
-            if (PROXY == null)
-            {
-                PROXY = PPSDK.CreateProxyServer();
-            }
-
-            return PROXY.GetContentUri(contentName);
+            PROXY = await PPSDK.CreateProxyServerAsync(content.downloadFolderPath);
+            return await PROXY.GetContentUri(content.Title);
         }
 
-        public Task<List<string>> GetSubtitleLIst(Uri localMpdUri, string contentName)
+        public async Task<List<string>> GetSubtitleLIst(Uri localMpdUri, ContentInfo content)
         {
             if (PROXY == null)
             {
-                PROXY = PPSDK.CreateProxyServer();
+                PROXY = await PPSDK.CreateProxyServerAsync(content.downloadFolderPath);
             }
 
-            return PROXY.GetSubTitleUrl(localMpdUri, contentName);
+            return await PROXY.GetSubTitleUrl(localMpdUri, content.Title);
         }
 
         public void Logger(string message)

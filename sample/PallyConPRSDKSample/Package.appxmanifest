@@ -31,6 +31,10 @@
     <Capability Name="internetClientServer" />
     <Capability Name="privateNetworkClientServer" />
     <uap3:Capability Name="backgroundMediaPlayback" />
+    <uap:Capability Name="removableStorage" />
+    <uap:Capability Name="musicLibrary" />
+    <uap:Capability Name="videosLibrary" />
+    <uap:Capability Name="picturesLibrary" />
     <DeviceCapability Name="6a7e5907-885c-4bcb-b40a-073c067bd3d5" />
   </Capabilities>
 </Package>

@@ -89,6 +89,18 @@
       "UserID": "utest",
       "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
+    },
+    {
+      "Title": "Sintel",
+      "Description": "Sintel Movie",
+      "DrmType": "PlayReady",
+      "Url": "https://contents.pallycon.com/TEST/PACKAGED_CONTENT/TEST_SIMPLE/dash/stream.mpd",
+      "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiYnppVnpFSllWbW9hUkhZdzlnNVEyNVIwblwvSVluVkVrXC9HWnRYZEs5MWo4PSIsImNpZCI6IlRlc3RSdW5uZXIiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWYXM0T1VwQ0RkNW0xc3BUWG04RFwvTUhGcGlieWZacERMRnBHeFArNkR4OThKSXhtTmFwWmRaRmlTTXB3aVpZRTIiLCJ0aW1lc3RhbXAiOiIyMDI0LTAzLTExVDEzOjIwOjE0WiJ9",
+      "CustomData": "",
+      "ContentID": "TestRunner",
+      "UserID": "utest",
+      "OptionalID": "",
+      "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     }
   ],
   "Clear": [
