@@ -29,7 +29,7 @@ namespace PallyConPRSDKSample.SDKSample
 
         private PallyConPRSDKWrapper PPSDKWrapper;
 
-        private Boolean IsHardware = true;
+        private Boolean IsHardwareDRM = true;
 
         public HWDRM()
         {
@@ -44,76 +44,75 @@ namespace PallyConPRSDKSample.SDKSample
             PallyConPane.PallyConSplitView.IsPaneOpen = !PallyConPane.PallyConSplitView.IsPaneOpen;
         }
 
-        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        private async void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             Debug.WriteLine(string.Format("You clicked {0}.", e.ClickedItem.ToString()));
 
             try
             {
-                this.DataContext = null;
                 mediaElement.Stop();
+                this.DataContext = null;
                 ContentInfo info = (ContentInfo)e.ClickedItem;
-                if (IsHardware)
-                {
-                    PPSDKWrapper.SetPlayReady(mediaElement, info);
-                }
+                await PPSDKWrapper.SetPlayReady(mediaElement, info);
+
+                if (IsHardwareDRM)
+                    PPSDKWrapper.SetHardware(mediaElement);
                 else
-                {
-                    ContentInfo copy = info.Clone();
-                    copy.Token = "";
-                    PPSDKWrapper.SetPlayReady(mediaElement, copy);
-                }
+                    PPSDKWrapper.SetSoftware(mediaElement);
+
                 this.DataContext = PPSDKWrapper;
                 mediaElement.Source = new Uri(info.Url);
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+                PPSDKWrapper.Logger(ex.Message);
             }
         }
 
-        private void HardwareDrm_Click(object sender, RoutedEventArgs e)
+        private async void HardwareDrm_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+                this.IsHardwareDRM = true;
                 this.DataContext = null;
                 ContentInfo info = ((Button)sender).DataContext as ContentInfo;
-                PPSDKWrapper.SetPlayReady(mediaElement, info);
+
+                if (PPSDKWrapper.ProtectionManager == null)
+                    await PPSDKWrapper.SetPlayReady(mediaElement, info);
+
                 PPSDKWrapper.SetHardware(mediaElement);
-                this.IsHardware = true;
                 this.DataContext = PPSDKWrapper;
                 mediaElement.Source = new Uri(info.Url);
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+                PPSDKWrapper.Logger(ex.Message);
             }
         }
 
-        private void SoftwareDrm_Click(object sender, RoutedEventArgs e)
+        private async void SoftwareDrm_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                ContentInfo info = ((Button)sender).DataContext as ContentInfo;
-                ContentInfo copy = info.Clone();
+                this.IsHardwareDRM = false;
                 this.DataContext = null;
-                // Since Token information requests a Hardware license, 
-                // it creates CustomData to request a license.
-                if (copy.Token.Length > 5)
-                {
-                    copy.Token = " ";
-                }
-                PPSDKWrapper.SetPlayReady(mediaElement, copy);
+                ContentInfo info = ((Button)sender).DataContext as ContentInfo;
+
+                if (PPSDKWrapper.ProtectionManager == null)
+                    await PPSDKWrapper.SetPlayReady(mediaElement, info);
+
                 PPSDKWrapper.SetSoftware(mediaElement);
-                this.IsHardware = false;
                 this.DataContext = PPSDKWrapper;
                 mediaElement.Source = new Uri(info.Url);
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+                PPSDKWrapper.Logger(ex.Message);
             }
-           
+
         }
     }
 }

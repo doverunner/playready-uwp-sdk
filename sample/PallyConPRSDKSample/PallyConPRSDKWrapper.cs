@@ -19,19 +19,17 @@ namespace PallyConPRSDKSample
     class PallyConPRSDKWrapper : PallyConViewModelBase
     {
         // PallyCon License Acqusition URL
-        private string LA_URL = "https://license-global.pallycon.com/ri/licenseManager.do";
+        private const string LA_URL = "https://license-global.pallycon.com/ri/licenseManager.do";
         // PallyCon PlayReady SDK
         public static PallyConPRSDK PPSDK = PallyConPRSDK.GetInstance;
         // PlayReady Information
         public PallyConPlayReadyInfoViewModel PlayReadyInfo { get; private set; }
         public ContentInfo ContentInfo { get; private set; }
-        // Contents Download Task
-        public PallyConDownloadTask DOWNLOAD_TASK;
         // Proxy Server for playing Downloaded Content.
         public PallyConProxyServer PROXY = null;
 
         /// <summary>
-        /// PallyCon Initialize. 
+        /// Initialize PallyCon PlayReady SDK
         /// </summary>
         public PallyConPRSDKWrapper()
         {
@@ -63,7 +61,7 @@ namespace PallyConPRSDKSample
         /// <param name="media">MediaElement</param>
         /// <param name="content">Content Information</param>
         /// <param name="isProactive">Reactive Or Proactive</param>
-        public async Task SetPlayReady(MediaElement media, ContentInfo content, bool isProactive = false)
+        public async Task SetPlayReady(MediaElement media, ContentInfo content, string licenseUrl = LA_URL, bool isProactive = false)
         {
             if (media == null)
             {
@@ -80,12 +78,12 @@ namespace PallyConPRSDKSample
                     ProtectionManager = await PPSDK.CreateProtectionManagerByToken(content.Token, LA_URL, isProactive);
                 else if (content.CustomData.Length > 10)
                     ProtectionManager = await PPSDK.CreateProtectionManagerByCustomData(content.CustomData, LA_URL, isProactive);
-                else
-                    ProtectionManager = await PPSDK.CreateProtectionManager(content.UserID, content.ContentID, content.OptionalID, LA_URL, isProactive);
+
                 PlayReadyInfo = new PallyConPlayReadyInfoViewModel();
                 PlayReadyInfo.RefreshStatics();
 
-                media.ProtectionManager = this.ProtectionManager;
+                if(ProtectionManager != null)
+                    media.ProtectionManager = this.ProtectionManager;
             }
             catch (Exception e)
             {
@@ -103,12 +101,17 @@ namespace PallyConPRSDKSample
         /// <returns>License Acquisition success or failure</returns>
         public async Task GetLicenseAsync(ContentInfo content)
         {
+            PlayReadyInfo = new PallyConPlayReadyInfoViewModel();
+            PlayReadyInfo.RefreshStatics();
+
             try
             {
                 if (content.Token.Length > 10)
-                    await PPSDK.GetLicenseByToken(content.Url, LA_URL, content.Token);
+                    await PPSDK.GetLicense(content.Url, LA_URL, content.Token);
+                else if (content.CustomData.Length > 10)
+                    await PPSDK.GetLicense(content.Url, LA_URL, content.CustomData);
                 else
-                    await PPSDK.GetLicense(content.Url, LA_URL, content.UserID, content.ContentID, content.OptionalID);
+                    throw new PallyConSDKException("Invalid Token or CustomData value.");
             }
             catch (LicenseIssuingException ex)
             {
@@ -161,10 +164,10 @@ namespace PallyConPRSDKSample
                 // Proxy Server Create
                 //if (PROXY == null)
                 {
-                    PROXY = await PPSDK.CreateProxyServerAsync(content.downloadFolderPath);
+                    PROXY = await PPSDK.CreateProxyServerAsync(content.DownloadFolderPath);
                 }
                 // DownloadTask Create
-                DOWNLOAD_TASK = PPSDK.CreateDownloadTask(content.ContentID, content.Title, content.Url, sendrequest, progresshandler, completehandler, failhandler);
+                content.DownloadTask = PPSDK.CreateDownloadTask(content.ContentID, content.Title, content.Url, sendrequest, progresshandler, completehandler, failhandler);
             }
             catch (DownloadFailException ex)
             {
@@ -182,14 +185,17 @@ namespace PallyConPRSDKSample
         {
             try
             {
-                if (DOWNLOAD_TASK != null)
+                content.IsDownloadPaused = false;
+
+                if (content.DownloadTask != null)
                 {
-                    if(content.downloadFolderPath != null)
+                    if (content.DownloadFolderPath != null)
                     {
-                        await DOWNLOAD_TASK.Start(content.downloadFolderPath);
-                    } else
+                        await content.DownloadTask.Start(content.DownloadFolderPath);
+                    }
+                    else
                     {
-                        await DOWNLOAD_TASK.Start();
+                        await content.DownloadTask.Start();
                     }
                 }
             }
@@ -209,8 +215,10 @@ namespace PallyConPRSDKSample
         {
             try
             {
-                if (DOWNLOAD_TASK != null)
-                    await DOWNLOAD_TASK.Resume();
+                content.IsDownloadPaused = false;
+
+                if (content.DownloadTask != null)
+                    await content.DownloadTask.Resume();
             }
             catch (Exception ex)
             {
@@ -222,14 +230,16 @@ namespace PallyConPRSDKSample
         /// Download Cancel.
         /// </summary>
         /// <param name="contentName"></param>
-        public void DownloadCancel(string contentName)
+        public void DownloadCancel(ContentInfo content)
         {
             try
             {
-                if (DOWNLOAD_TASK != null)
+                content.IsDownloadPaused = false;
+
+                if (content.DownloadTask != null)
                 {
-                    DOWNLOAD_TASK.Cancel();
-                    DOWNLOAD_TASK = null;
+                    content.DownloadTask.Cancel();
+                    content.DownloadTask = null;
                 }
             }
             catch (Exception ex)
@@ -246,8 +256,10 @@ namespace PallyConPRSDKSample
         {
             try
             {
-                if (DOWNLOAD_TASK != null)
-                    DOWNLOAD_TASK.Pause();
+                content.IsDownloadPaused = true;
+
+                if (content.DownloadTask != null)
+                    content.DownloadTask.Pause();
             }
             catch (Exception ex)
             {
@@ -263,7 +275,7 @@ namespace PallyConPRSDKSample
         /// <returns></returns>
         public async Task<Uri> GetPlayBackUriAsync(ContentInfo content)
         {
-            PROXY = await PPSDK.CreateProxyServerAsync(content.downloadFolderPath);
+            PROXY = await PPSDK.CreateProxyServerAsync(content.DownloadFolderPath);
             return await PROXY.GetContentUri(content.Title);
         }
 
@@ -271,7 +283,7 @@ namespace PallyConPRSDKSample
         {
             if (PROXY == null)
             {
-                PROXY = await PPSDK.CreateProxyServerAsync(content.downloadFolderPath);
+                PROXY = await PPSDK.CreateProxyServerAsync(content.DownloadFolderPath);
             }
 
             return await PROXY.GetSubTitleUrl(localMpdUri, content.Title);

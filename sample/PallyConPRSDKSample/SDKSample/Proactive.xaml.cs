@@ -102,7 +102,7 @@ namespace PallyConPRSDKSample.SDKSample
             PallyConPane.PallyConSplitView.IsPaneOpen = !PallyConPane.PallyConSplitView.IsPaneOpen;
         }
 
-        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        private async void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             Debug.WriteLine(string.Format("You clicked {0}.", e.ClickedItem.ToString()));
 
@@ -110,13 +110,15 @@ namespace PallyConPRSDKSample.SDKSample
             {
                 this.DataContext = null;
                 ContentInfo info = (ContentInfo)e.ClickedItem;
-                PPSDKWrapper.SetPlayReady(mediaElement, info, true);
+                await PPSDKWrapper.SetPlayReady(mediaElement, info, isProactive:true);
+                PPSDKWrapper.SetSoftware(mediaElement);
                 this.DataContext = PPSDKWrapper;
                 mediaElement.Source = new Uri(info.Url);
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+                PPSDKWrapper.Logger(ex.Message);
             }
         }
 
@@ -124,12 +126,9 @@ namespace PallyConPRSDKSample.SDKSample
         {
             try
             {
-                this.DataContext = null;
+                this.DataContext = PPSDKWrapper;
                 ContentInfo info = ((Button)sender).DataContext as ContentInfo;
                 await PPSDKWrapper.GetLicenseAsync(info);
-                PPSDKWrapper.SetPlayReady(mediaElement, info, true);
-                this.DataContext = PPSDKWrapper;
-                //mediaElement.Source = new Uri(info.Url);
             }
             catch (Exception ex)
             {

@@ -49,30 +49,28 @@ namespace PallyConPRSDKSample.SDKSample
         {
             Debug.WriteLine(string.Format("You clicked {0}.", e.ClickedItem.ToString()));
             ContentInfo info = (ContentInfo)e.ClickedItem;
-            if (info.Title.Equals("cleardjango") == true)
-            {
-                StartPlayback(info);
-            }
-            else
-            {
-                mediaElement.Source = new Uri(info.Url);
-            }
+            StartPlayback(info);
         }
 
-        private async void StartPlayback(ContentInfo info)
+        private void PlayBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ContentInfo info = new ContentInfo();
+            info.Url = UrlInput.Text;
+            StartPlayback(info);
+        }
+
+        private void StartPlayback(ContentInfo info)
         {
             try
             {
+                mediaElement.Stop();
                 this.DataContext = null;
-                info.DownloadPlayUrl = await PPWrapper.GetPlayBackUriAsync(info);
-                this.DataContext = PPWrapper;
-                mediaElement.Source = info.DownloadPlayUrl;
+                mediaElement.Source = new Uri(info.Url);
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
         }
-
     }
 }

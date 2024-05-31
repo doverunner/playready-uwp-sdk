@@ -13,17 +13,29 @@
     <Page.Resources>
 
         <CollectionViewSource x:Name="ContentsCVS" IsSourceGrouped="True" />
-
         <DataTemplate x:Key="ContentListViewTemplate" x:DataType="data:ContentInfo">
-            <StackPanel Orientation="Horizontal" Width="Auto" Height="130">
-                <Image Height="110" Width="110" Margin="0,8,0,8" Source="{x:Bind ImagePath}" Stretch="UniformToFill"/>
-                <StackPanel VerticalAlignment="Center" Width="380" Margin="8,8,0,0">
-                    <TextBlock Text="{x:Bind Title}" Style="{StaticResource BaseTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind Url}" TextWrapping="WrapWholeWords" Style="{ThemeResource BodyTextBlockStyle}"/>
-                    <TextBlock Text="{x:Bind Token}" TextWrapping="WrapWholeWords" Margin="0,8,0,0" Style="{ThemeResource BodyTextBlockStyle}"/>
-                    <Button Content="Get License" Click="GetLicense_Click" HorizontalAlignment="Left" HorizontalContentAlignment="Left"/>
-                </StackPanel>
-            </StackPanel>
+            <Grid Height="150">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Height="110" Width="110" Margin="0,8,0,8" Source="{x:Bind ImagePath}" Stretch="UniformToFill" Grid.Column="0"/>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{x:Bind Title}" Style="{StaticResource BaseTextBlockStyle}" Margin="8,8,8,0"/>
+                    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="8,0,8,8">
+                        <StackPanel>
+                            <TextBlock Text="{x:Bind Description}" TextWrapping="Wrap" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                            <TextBlock Text="{x:Bind Url}" TextWrapping="WrapWholeWords" Style="{ThemeResource BodyTextBlockStyle}"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                    <Button Content="Get License" Grid.Row="2" Click="GetLicense_Click" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="8,8,8,8"/>
+                </Grid>
+            </Grid>
         </DataTemplate>
     </Page.Resources>
 

@@ -13,18 +13,28 @@
     <Page.Resources>
 
         <CollectionViewSource x:Name="ContentsCVS" IsSourceGrouped="True" />
-
         <DataTemplate x:Key="ContentListViewTemplate" x:DataType="data:ContentInfo">
-            <StackPanel Orientation="Horizontal" Width="Auto" Height="130">
-                <Image Height="110" Width="110" Margin="0,8,0,8" Source="{x:Bind ImagePath}" Stretch="UniformToFill"/>
-                <StackPanel VerticalAlignment="Center" Width="380" Margin="8,8,0,0">
-                    <TextBlock Text="{x:Bind Title}" Style="{StaticResource BaseTextBlockStyle}" />
-                    <TextBlock Text="{x:Bind Url}" TextWrapping="Wrap" Style="{ThemeResource BodyTextBlockStyle}"/>
-                    <TextBlock Text="{x:Bind Token}" TextWrapping="NoWrap" Margin="0,8,0,0" Style="{ThemeResource BodyTextBlockStyle}"/>
-                </StackPanel>
-            </StackPanel>
+            <Grid Height="130">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Height="110" Width="110" Margin="0,8,0,8" Source="{x:Bind ImagePath}" Stretch="UniformToFill" Grid.Column="0"/>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{x:Bind Title}" Style="{StaticResource BaseTextBlockStyle}" Margin="8,8,8,0"/>
+                    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="8,0,8,8">
+                        <StackPanel>
+                            <TextBlock Text="{x:Bind Description}" TextWrapping="Wrap" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,8"/>
+                            <TextBlock Text="{x:Bind Url}" TextWrapping="WrapWholeWords" Style="{ThemeResource BodyTextBlockStyle}"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </Grid>
         </DataTemplate>
-
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -37,7 +47,14 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
- 
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,10,10,0">
+            <TextBox x:Name="UrlInput" Width="300" Margin="5" PlaceholderText="Enter Content URL here"/>
+            <TextBox x:Name="TokenInput" Width="300" Margin="5" PlaceholderText="Enter Token here"/>
+            <TextBox x:Name="LicenseUrlInput" Width="300" Margin="5" PlaceholderText="Enter License URL here" Text="https://license-global.pallycon.com/ri/licenseManager.do"/>
+            <Button Content="Play" Margin="5" Click="PlayBtn_Click"/>
+        </StackPanel>
+
         <Button Style="{StaticResource SplitViewTogglePaneButtonStyle}"
                     VerticalAlignment="Center"
                     Click="ShowSliptView"/>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" IgnorableNamespaces="uap mp uap3 iot">
-  <Identity Name="PallyCon.PlayReady.SDKSample" Publisher="CN=INKA.35" Version="1.1.0.0" />
+  <Identity Name="PallyCon.PlayReady.SDKSample" Publisher="CN=PallyCon" Version="2.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="ea8c1c31-2306-4972-83a0-f8f5150b9fe2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>PallyConPR SDK Sample</DisplayName>
@@ -8,7 +8,7 @@
     <Logo>Assets\PallyConIconStoreLogo_50x50.png</Logo>
   </Properties>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.18362.0" />
   </Dependencies>
   <Resources>
     <Resource Language="x-generate" />

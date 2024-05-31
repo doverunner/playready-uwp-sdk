@@ -9,6 +9,9 @@ using Windows.Data.Json;
 using Windows.Storage;
 using Windows.UI.Xaml;
 using System.IO;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using PallyConSDK.DownloadTask;
 
 namespace PallyConPRSDKSample.Model
 {
@@ -21,7 +24,7 @@ namespace PallyConPRSDKSample.Model
         public string HardwearDrm { get; set; }
     }
 
-    public class ContentInfo
+    public class ContentInfo : INotifyPropertyChanged
     {
         public string Title { get; set; }
         public string Description { get; set; }
@@ -31,21 +34,65 @@ namespace PallyConPRSDKSample.Model
         public string Token { get; set; }
         public string CustomData { get; set; }
         public string ContentID { get; set; }
-        public string UserID { get; set; }
-        public string OptionalID { get; set; }
         public string ImagePath { get; set; }
-        public string downloadFolderPath { get; set; }
-
-        public Visibility ProgressVisibilty { get; set; }
+        public string DownloadFolderPath { get; set; }
         public Uri DownloadPlayUrl { get; set; }
+        public PallyConDownloadTask DownloadTask { get; set; }
+        public Visibility ProgressVisibilty { get; set; }
+        public bool IsDownloadPaused { get; set; }
 
-        public List<string> Subtitle { get; set; }
+        private bool _isDownloading;
+        public bool IsDownloading
+        {
+            get => _isDownloading;
+            set
+            {
+                if (_isDownloading != value)
+                {
+                    _isDownloading = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        public ContentInfo(string title = "", string description = "", 
-                           string drmtype = "", string url = "", 
+        private double _downloadMaxIndex;
+        public double DownloadMaxIndex
+        {
+            get => _downloadMaxIndex;
+            set
+            {
+                if (_downloadMaxIndex != value)
+                {
+                    _downloadMaxIndex = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private double _downloadProgress;
+        public double DownloadProgress
+        {
+            get => _downloadProgress;
+            set
+            {
+                if (_downloadProgress != value)
+                {
+                    _downloadProgress = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public ContentInfo(string title = "", string description = "",
+                           string drmtype = "", string url = "",
                            string token = "", string customData = "",
-                           string contenId = "", string userid = "", 
-                           string optionalid = "", string imagepath = "", 
+                           string contenId = "", string imagepath = "",
                            string downloadFolderPath = null,
                            Visibility progressVisibilty = Visibility.Visible)
         {
@@ -56,37 +103,18 @@ namespace PallyConPRSDKSample.Model
             this.Token = token;
             this.CustomData = customData;
             this.ContentID = contenId;
-            this.UserID = userid;
-            this.OptionalID = optionalid;
             this.ImagePath = imagepath;
-            this.downloadFolderPath = downloadFolderPath;
+            this.DownloadFolderPath = downloadFolderPath;
             this.ProgressVisibilty = progressVisibilty;
-            this.Subtitle = new List<string>();
-        }
-
-        public ContentInfo Clone()
-        {
-            ContentInfo info = new ContentInfo
-            {
-                Title = this.Title,
-                Url = this.Url,
-                Description = this.Description,
-                DrmType = this.DrmType,
-                Token = this.Token,
-                CustomData = this.CustomData,
-                ContentID = this.ContentID,
-                OptionalID = this.OptionalID,
-                ImagePath = this.ImagePath,
-                downloadFolderPath = this.downloadFolderPath,
-                UserID = this.UserID
-            };
-
-            return info;
+            this.IsDownloadPaused = false;
+            this.IsDownloading = false;
+            this.DownloadMaxIndex = 0;
+            this.DownloadProgress = 0;
         }
         public override string ToString()
         {
             return this.Url;
-        }        
+        }
     }
 
     public sealed class ContentInfoDataSource
@@ -137,8 +165,6 @@ namespace PallyConPRSDKSample.Model
                                                         groupObject["Token"].GetString(),
                                                         groupObject["CustomData"].GetString(),
                                                         groupObject["ContentID"].GetString(),
-                                                        groupObject["UserID"].GetString(),
-                                                        groupObject["OptionalID"].GetString(),
                                                         groupObject["ImagePath"].GetString());
 
                     this.Groups.Add(group);
@@ -146,21 +172,6 @@ namespace PallyConPRSDKSample.Model
                 }
             }
         }
-
-        //private async Task<bool> IfStorageItemExist(StorageFolder folder, string itemName)
-        //{
-        //    try
-        //    {
-        //        IStorageItem item = await folder.TryGetItemAsync(itemName);
-        //        return (item != null);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Should never get here 
-        //        return false;
-        //    }
-        //}
-
 
         private void DefaultDownloadedContent()
         {

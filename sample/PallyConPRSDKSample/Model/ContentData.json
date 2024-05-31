@@ -8,8 +8,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiUFRnWHJ5anZRN0E1SVZtTG95WXBuV2RvVzV4SnVGaVA2QVcxbUlhQm9iST0iLCJjaWQiOiJkZW1vLWJiYi1zaW1wbGUiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWYXM0T1VwQ0RkNW0xc3BUWG04RFwvTUhGcGlieWZacERMRnBHeFArNkR4OThKSXhtTmFwWmRaRmlTTXB3aVpZRTIiLCJ0aW1lc3RhbXAiOiIyMDIyLTEyLTA5VDA3OjQzOjAxWiJ9",
       "CustomData": "",
       "ContentID": "demo-bbb-simple",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     },
     {
@@ -20,8 +18,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiS1pGZkh1SWNcL0o1RThvejFSWkJOd2J3N3N4MXo1UStTaStTVERva1I1NDg9IiwiY2lkIjoiZGVtby10b3MtYWR2YW5jZWQiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWYXM0T1VwQ0RkNW0xc3BUWG04RFwvTUhGcGlieWZacERMRnBHeFArNkR4OThKSXhtTmFwWmRaRmlTTXB3aVpZRTIiLCJ0aW1lc3RhbXAiOiIyMDIyLTEyLTA5VDA4OjA4OjMyWiJ9",
       "CustomData": "",
       "ContentID": "demo-tos-advanced",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     }
   ],
@@ -34,8 +30,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiNnVjYUU5U0JYUUFNbHJ3V3JJZEJyeVFjZ3pVSUNsVStLVmtOQUlMbUJIMD0iLCJjaWQiOiJkZW1vLWJiYi1zaW1wbGUiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWU0ZKU0g5c3hwd1FJUVhyNUI2UitBYWFmU2ZWWFNLazRtVkZsZTJQXC9wcmpoNTgrYk9oYnRVNDQ0bHg5b3JlRzUiLCJ0aW1lc3RhbXAiOiIyMDIyLTEyLTE1VDA5OjM5OjU5WiJ9",
       "CustomData": "",
       "ContentID": "demo-bbb-simple",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     },
     {
@@ -46,8 +40,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiVlBScXdiMTNyM1U2bDk0Q1Byc3RuNDNld0NKWVVRbjgxUHdWNWJ5XC9QQnc9IiwiY2lkIjoiZGVtby10b3MtYWR2YW5jZWQiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWU0ZKU0g5c3hwd1FJUVhyNUI2UitBYWFmU2ZWWFNLazRtVkZsZTJQXC9wcmpoNTgrYk9oYnRVNDQ0bHg5b3JlRzUiLCJ0aW1lc3RhbXAiOiIyMDIyLTEyLTE1VDA5OjQxOjA4WiJ9",
       "CustomData": "",
       "ContentID": "demo-tos-advanced",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     }
   ],
@@ -60,8 +52,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoidmRsNlliQUFITG1OMmk3dGRyTWoxajk3QU0rcW83RmV1b2tiTGw4R1Vrcz0iLCJjaWQiOiJkZW1vLWJiYi1zaW1wbGUiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWU0ZKU0g5c3hwd1FJUVhyNUI2UitBYWFmU2ZWWFNLazRtVkZsZTJQXC9wcmpoNTgrYk9oYnRVNDQ0bHg5b3JlRzUiLCJ0aW1lc3RhbXAiOiIyMDIyLTEyLTA5VDA4OjI2OjM4WiJ9",
       "CustomData": "",
       "ContentID": "demo-bbb-simple",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     }
   ],
@@ -74,8 +64,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiNnVjYUU5U0JYUUFNbHJ3V3JJZEJyeVFjZ3pVSUNsVStLVmtOQUlMbUJIMD0iLCJjaWQiOiJkZW1vLWJiYi1zaW1wbGUiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWU0ZKU0g5c3hwd1FJUVhyNUI2UitBYWFmU2ZWWFNLazRtVkZsZTJQXC9wcmpoNTgrYk9oYnRVNDQ0bHg5b3JlRzUiLCJ0aW1lc3RhbXAiOiIyMDIyLTEyLTE1VDA5OjM5OjU5WiJ9",
       "CustomData": "",
       "ContentID": "demo-bbb-simple",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     },
     {
@@ -86,8 +74,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiVlBScXdiMTNyM1U2bDk0Q1Byc3RuNDNld0NKWVVRbjgxUHdWNWJ5XC9QQnc9IiwiY2lkIjoiZGVtby10b3MtYWR2YW5jZWQiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWU0ZKU0g5c3hwd1FJUVhyNUI2UitBYWFmU2ZWWFNLazRtVkZsZTJQXC9wcmpoNTgrYk9oYnRVNDQ0bHg5b3JlRzUiLCJ0aW1lc3RhbXAiOiIyMDIyLTEyLTE1VDA5OjQxOjA4WiJ9",
       "CustomData": "",
       "ContentID": "demo-tos-advanced",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     },
     {
@@ -98,8 +84,6 @@
       "Token": "eyJrZXlfcm90YXRpb24iOmZhbHNlLCJyZXNwb25zZV9mb3JtYXQiOiJvcmlnaW5hbCIsInVzZXJfaWQiOiJ1dGVzdCIsImRybV90eXBlIjoicGxheXJlYWR5Iiwic2l0ZV9pZCI6IkRFTU8iLCJoYXNoIjoiYnppVnpFSllWbW9hUkhZdzlnNVEyNVIwblwvSVluVkVrXC9HWnRYZEs5MWo4PSIsImNpZCI6IlRlc3RSdW5uZXIiLCJwb2xpY3kiOiI5V3FJV2tkaHB4VkdLOFBTSVljbkpzY3Z1QTlzeGd1YkxzZCthanVcL2JvbVFaUGJxSSt4YWVZZlFvY2NrdnVFZkFhcWRXNWhYZ0pOZ2NTUzNmUzdvOE5zandzempNdXZ0KzBRekxrWlZWTm14MGtlZk9lMndDczJUSVRnZFU0QnZOOWFiaGQwclFrTUlybW9JZW9KSHFJZUhjUnZWZjZUMTRSbVRBREVwQ1k3UEhmUGZcL1ZGWVwvVmJYdXhYXC9XVHRWYXM0T1VwQ0RkNW0xc3BUWG04RFwvTUhGcGlieWZacERMRnBHeFArNkR4OThKSXhtTmFwWmRaRmlTTXB3aVpZRTIiLCJ0aW1lc3RhbXAiOiIyMDI0LTAzLTExVDEzOjIwOjE0WiJ9",
       "CustomData": "",
       "ContentID": "TestRunner",
-      "UserID": "utest",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     }
   ],
@@ -112,8 +96,6 @@
       "Token": "",
       "CustomData": "",
       "ContentID": "",
-      "UserID": "",
-      "OptionalID": "",
       "ImagePath": "ms-appx:///Assets/PallyConContents-300.png"
     }
   ]

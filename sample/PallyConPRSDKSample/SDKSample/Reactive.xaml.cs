@@ -105,6 +105,35 @@ namespace PallyConPRSDKSample.SDKSample
         {
             PallyConPane.PallyConSplitView.IsPaneOpen = !PallyConPane.PallyConSplitView.IsPaneOpen;
         }
+        private async void PlayBtn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var url = UrlInput.Text;
+                var token = TokenInput.Text;
+                var licenseUrl = LicenseUrlInput.Text;
+
+                if (!string.IsNullOrWhiteSpace(url) && !string.IsNullOrWhiteSpace(token))
+                {
+                    mediaElement.Stop();
+                    this.DataContext = null;
+                    ContentInfo info = new ContentInfo();
+                    info.Url = url;
+                    info.Token = token;
+                    await PPSDKWrapper.SetPlayReady(mediaElement, info, licenseUrl);
+                    PPSDKWrapper.SetSoftware(mediaElement);
+                    this.DataContext = PPSDKWrapper;
+                    SetPlayerSubtitle(new Uri(info.Url), info);
+                    mediaElement.Source = new Uri(url);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+                PPSDKWrapper.Logger(ex.Message);
+            }
+        }
+
         private async void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             Debug.WriteLine(string.Format("You clicked {0}.", e.ClickedItem.ToString()));
@@ -115,18 +144,15 @@ namespace PallyConPRSDKSample.SDKSample
                 this.DataContext = null;
                 ContentInfo info = (ContentInfo)e.ClickedItem;
                 await PPSDKWrapper.SetPlayReady(mediaElement, info);
+                PPSDKWrapper.SetSoftware(mediaElement);
                 this.DataContext = PPSDKWrapper;
                 SetPlayerSubtitle(new Uri(info.Url), info);
                 mediaElement.Source = new Uri(info.Url);
             }
-            catch (PallyConSDKException ex)
-            {
-                PPSDKWrapper.Logger(ex.Message);
-                //System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+                PPSDKWrapper.Logger(ex.Message);
             }
         }
 
