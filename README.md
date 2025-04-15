@@ -8,6 +8,5 @@ Please refer to the links below for detailed information.
 ## Reference Links
 
 - [SDK Guide document](https://doverunner.com/docs/en/multidrm/clients/playready-uwp/)
-- [SDK API Reference](https://github.com/doverunner/doverunner-playready-uwp-sdk/tree/main/doc)
+- [SDK API Reference](https://github.com/doverunner/playready-uwp-sdk/tree/main/doc)
 - [DoveRunner Multi-DRM License Token Guide](https://doverunner.com/docs/en/multidrm/license/license-token)
-- [Helpdesk for technical support](https://pallycon.zendesk.com)
