@@ -91,7 +91,7 @@ namespace DoveRunnerPRSDKSample.SDKSample
         {
             this.InitializeComponent();
             PRSDKWrapper = new DoveRunnerPRSDKWrapper();
-            //PRSDKWrapper.SetDoveRunnerLicenseRequestCallback(LicenseRequestAsync);
+            PRSDKWrapper.SetDoveRunnerLicenseRequestCallback(LicenseRequestAsync);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
