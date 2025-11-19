@@ -56,6 +56,10 @@ namespace DoveRunnerPRSDKSample
             PRSDK.SetDoveRunnerLicenseRequestCallback(licenseRequest);
         }
 
+        /// <summary>
+        /// Utility function for reading the key table file when applying the licence cipher.
+        /// </summary>
+        /// <param name="fileName"> Key table filename </param>
         private async Task<IBuffer> ReadFileBufferAsync(string fileName)
         {
             try
@@ -89,9 +93,11 @@ namespace DoveRunnerPRSDKSample
                 ContentInfo = new ContentInfo();
                 ContentInfo = content;
 
+                //var fileBuffer = await ReadFileBufferAsync("plc-kt-{siteId}.bin");
+
                 // If there is no TOKEN information, the UserID, ContentID and OptionalID can be requested for licensing.
                 if (content.Token.Length > 10)
-                    ProtectionManager = await PRSDK.CreateProtectionManagerByToken(content.Token, licenseUrl, isProactive);
+                    ProtectionManager = await PRSDK.CreateProtectionManagerByToken(content.Token, licenseUrl, isProactive/*, fileBuffer*/);
                 else if (content.CustomData.Length > 10)
                     ProtectionManager = await PRSDK.CreateProtectionManagerByCustomData(content.CustomData, licenseUrl, isProactive);
 
