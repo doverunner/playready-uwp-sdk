@@ -20,7 +20,7 @@ namespace DoveRunnerPRSDKSample
     class DoveRunnerPRSDKWrapper : DoveRunnerViewModelBase
     {
         // DoveRunner License Acqusition URL
-        private const string LA_URL = "https://license-global.pallycon.com/ri/licenseManager.do";
+        private const string LA_URL = "https://drm-license.doverunner.com/ri/licenseManager.do";
         // DoveRunner PlayReady SDK
         public static PlayReadyDRMSDK PRSDK = PlayReadyDRMSDK.GetInstance;
         // PlayReady Information
